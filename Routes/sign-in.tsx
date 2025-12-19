@@ -1,17 +1,8 @@
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
-import { Link, redirect } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { loginWithGoogle } from "../app/appwrite/auth";
-import { account } from "../app/appwrite/client";
 
- export async function clientLoader(){
-  try{
-     const user = await account.get();
-     if (!user) {return redirect("/")}
-  }catch(e){
-    
-    console.log('Error during client load' , e)
-  }
- }
+
 
 const SignIn = () => {
 

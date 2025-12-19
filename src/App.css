@@ -535,6 +535,13 @@ body {
 .e-css.e-btn {
   text-transform: none;
 }
+  /* Hide any backdrop overlay created by Syncfusion sidebar */
+  /* Hide any backdrop overlay created by Syncfusion sidebar */
+  .e-backdrop {
+    
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
 .e-dropdown-btn {
   border-radius: 6px;
   border: 1px solid #f0fef9;

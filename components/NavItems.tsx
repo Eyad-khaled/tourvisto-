@@ -1,15 +1,14 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { sidebarItems } from "../app/constants";
-import { logoutUser, getExistingUser } from "../app/appwrite/auth";
-import { avatars } from "../app/appwrite/client";
+import { logoutUser, getExistingUser, getGooglePicture } from "../app/appwrite/auth";
+import { account, avatars } from "../app/appwrite/client";
 
 type User = {
   name?: string;
   email?: string;
   imageUrl?: string;
   imgUrl?: string;
-  status?: string;
   $id?: string;
 };
 
@@ -19,30 +18,38 @@ type NavItemsProps = {
 
 const NavItems = ({ handleClick }: NavItemsProps) => {
   const [user, setUser] = useState<User | null>(null);
-
+  const [profileImg, setProfileImg] = useState<string>('');
   const navigate = useNavigate();
   const logOut = async () => {
     await logoutUser();
     navigate("/sign-in");
   };
-  const [img, setImg] = useState("");
+  // const [img, setImg] = useState("");
 
   useEffect(() => {
     const load = async () => {
       try {
-        const existingUser = await getExistingUser();
+        const existingUser: User = await account.get();
+        console.log('navitmes', existingUser);
 
-        let profileImgUrl = existingUser?.imgUrl;
+        const { providerAccessToken } = (await account.getSession("current")) || {};
+        // console.log("storeUserData: providerAccessToken:", providerAccessToken);
+
+        const profilePicture = providerAccessToken
+          ? await getGooglePicture(providerAccessToken)
+          : null;
+        console.log("navitmes: profilePicture:", profilePicture);
         if (!existingUser) {
           setUser(null);
           return;
         }
 
-        profileImgUrl = user?.imageUrl || avatars.getInitials(existingUser?.name);
+        const profileImgUrl = profilePicture || avatars.getInitials(existingUser?.name);
 
-        setImg(profileImgUrl);
-
-        setUser(existingUser);
+        // setImg(profileImgUrl);
+        setUser(existingUser)
+        setProfileImg(profileImgUrl)
+        // setUser(existingUser);
       } catch (e) {
         console.error("Error loading user in NavItems:", e);
       }
@@ -50,10 +57,13 @@ const NavItems = ({ handleClick }: NavItemsProps) => {
 
     load();
   }, []);
+  useEffect(() => {
+
+  }, [user])
 
   return (
     <section className="nav-items">
-      <Link to="/" className="link-logo">
+      <Link to="/dashoard" className="link-logo">
         <img
           src="/assets/icons/logo.svg"
           alt="Logo"
@@ -86,7 +96,7 @@ const NavItems = ({ handleClick }: NavItemsProps) => {
         </nav>
 
         <footer className="nav-footer">
-          <img src={img} alt={user?.name ?? "User"} />
+          <img src={profileImg} alt={user?.name ?? "User"} />
           <article>
             <h2>{user?.name ?? "Guest"}</h2>
             <p>{user?.email ?? ""}</p>

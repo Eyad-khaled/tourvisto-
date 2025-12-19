@@ -61,7 +61,7 @@ const Trips = () => {
           <h1 className="p-24-semibold text-dark-100 mb-6">All Created Trips</h1>
           <div className="trip-grid mb-4 ">
             {allTrips.trips?.map(({ $id, imageUrls, tripDetails }) => (
-              <Link key={$id} to={`/trips/${$id}`}>
+              <div key={$id}>
                 <div
                   className=""
                   onClick={() => {
@@ -78,7 +78,7 @@ const Trips = () => {
                     price={tripDetails?.estimatedPrice}
                   />
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </section>

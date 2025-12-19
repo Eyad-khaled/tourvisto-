@@ -14,18 +14,21 @@ import Trips from '../Routes/trips'
 // import CreateTrips from '../Routes/createTrips'
 import TripDetails from '../Routes/tripDetails'
 import { lazy, Suspense } from "react";
+
 const CreateTrips = lazy(() => import("../Routes/createTrips"));
 function App() {
+
   const navigate = useNavigate();
   const location = useLocation();
-   async function clientLoader() {
-  
+  async function clientLoader() {
+
     try {
       const user = await account.get();
-        
+
       if (!user) {
         return navigate("/sign-in");
       }
+
       if (user && location.pathname === "/sign-in") {
         return navigate("/dashboard");
       }
@@ -37,10 +40,10 @@ function App() {
       // if (existingUser?.status === "user") {
       //   return navigate("/dashboard");
       // }
-  
-  
+
+
       //  console.log('user',user);
-  
+
       return existingUser?.$id ? existingUser : await storeUserData();
     } catch (e) {
       console.log("Error in client loader", e);

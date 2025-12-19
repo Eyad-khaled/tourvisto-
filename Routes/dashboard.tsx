@@ -7,13 +7,15 @@ import { SidebarComponent } from "@syncfusion/ej2-react-navigations";
 import MobileBar from "../components/MobileBar";
 import "../src/App.css";
 import NavItems from "../components/NavItems";
-import { getExistingUser } from "../app/appwrite/auth";
+// import { getExistingUser } from "../app/appwrite/auth";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getAllTrips } from "../app/appwrite/allTrips";
 import { parseMarkdownToJson } from "../app/lib/utils";
+import { account, appwriteConfig, client } from "../app/appwrite/client";
+import { TablesDB } from "appwrite";
+import { getGooglePicture } from "../app/appwrite/auth";
 
-const user = await getExistingUser();
 
 type TripRecord = {
   $id: string;
@@ -22,26 +24,64 @@ type TripRecord = {
 };
 
 const Dashboard = () => {
-   const [allTrips, setAllTrips] = useState<{ trips: TripRecord[] }>({ trips: [] });
-    
-    useEffect(() => {
-      
-      const getTrip = async () => {
-        const response = await getAllTrips();
-        const normalizedTrips = (response?.allTrips ?? []).slice(0,4)
-          .map((trip) => ({
-            ...trip,
-            tripDetails: parseMarkdownToJson(trip.tripDetails),
-          }));
-  
-        setAllTrips({trips:normalizedTrips});
-        
-        console.log('trips' , normalizedTrips);
-        
-      };
-  
-      getTrip();
-    }, []);
+  const [user, setUser] = useState<any>(null);
+  useEffect(() => {
+
+    const addUser = async () => {
+      try {
+        const currentUser = await account.get();
+        // if (!currentUser.$id) console.log('NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO');
+        // console.log('currentUser ############', currentUser);
+        const { providerAccessToken } = (await account.getSession("current")) || {};
+        const profilePicture = providerAccessToken
+          ? await getGooglePicture(providerAccessToken)
+          : null;
+        const tableDB = new TablesDB(client)
+        setUser(currentUser ? currentUser : null);
+        await tableDB.createRow({
+          databaseId: appwriteConfig.databaseId,
+          tableId: appwriteConfig.userCollectionId,
+          rowId: currentUser?.$id,
+          data: {
+            accountId: currentUser?.$id,
+            email: currentUser?.email,
+            name: currentUser?.name,
+            imageUrl: profilePicture,
+            // Database schema expects a typo'd field `joindAt` in some environments;
+            // include both to be safe (legacy + correct spelling).
+            joinedAt: new Date().toISOString(),
+          }
+        })
+        console.log("USER CREATED");
+      } catch (error) {
+        console.log('error creating user ', error);
+
+      }
+    }
+
+    addUser();
+  }
+    , [])
+  const [allTrips, setAllTrips] = useState<{ trips: TripRecord[] }>({ trips: [] });
+
+  useEffect(() => {
+
+    const getTrip = async () => {
+      const response = await getAllTrips();
+      const normalizedTrips = (response?.allTrips ?? []).slice(0, 4)
+        .map((trip) => ({
+          ...trip,
+          tripDetails: parseMarkdownToJson(trip.tripDetails),
+        }));
+
+      setAllTrips({ trips: normalizedTrips });
+
+      // console.log('trips', normalizedTrips);
+
+    };
+
+    getTrip();
+  }, []);
   const { totalUsers, usersJoined, totalTrips, tripsCreated, userRole } =
     dashboardstats;
   return (
@@ -57,7 +97,7 @@ const Dashboard = () => {
         <Header
           title={`Welcome ${user ? user.name.split(" ")[0] : "Guest"} 👋`}
           desc="Track Activity , trends and popular destinations"
-          
+
         />
         <section className="flex flex-col gap-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -88,8 +128,8 @@ const Dashboard = () => {
             Created Trips
           </h1>
           <div className="trip-grid overflow-hidden">
-                
-                    {allTrips.trips?.map(({ $id, imageUrls, tripDetails }) => (
+
+            {allTrips.trips?.map(({ $id, imageUrls, tripDetails }) => (
               <Link key={$id} to={`/trips/${$id}`}>
                 <motion.div
                   key={$id}
@@ -98,26 +138,26 @@ const Dashboard = () => {
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                   viewport={{ once: false }}
                 >
-                <div
-                  className=""
-                  onClick={() => {
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  <TripCard
-                    key={$id}
-                    id={$id}
-                    name={tripDetails?.name}
-                    imageurl={imageUrls?.[0]}
-                    location={tripDetails?.itinerary?.[0]?.location}
-                    tags={[tripDetails?.interest, tripDetails?.travelStyle]}
-                    price={tripDetails?.estimatedPrice}
-                  />
-                </div>
+                  <div
+                    className=""
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    <TripCard
+                      key={$id}
+                      id={$id}
+                      name={tripDetails?.name}
+                      imageurl={imageUrls?.[0]}
+                      location={tripDetails?.itinerary?.[0]?.location}
+                      tags={[tripDetails?.interest, tripDetails?.travelStyle]}
+                      price={tripDetails?.estimatedPrice}
+                    />
+                  </div>
                 </motion.div>
               </Link>
             ))}
-                
+
           </div>
         </section>
       </main>
