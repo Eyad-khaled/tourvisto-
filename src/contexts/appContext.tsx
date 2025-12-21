@@ -49,6 +49,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
+        await account.getSession("current");
         const currentUser = await account.get();
         const { providerAccessToken } = (await account.getSession("current")) || {};
         const profilePicture = providerAccessToken
@@ -57,6 +58,8 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
 
         // Create user in database if not exist
         const tableDB = new TablesDB(client);
+        console.log('current', currentUser);
+
         try {
           await tableDB.createRow({
             databaseId: appwriteConfig.databaseId,
