@@ -40,59 +40,59 @@ const TripDetails = () => {
   const { tripId } = useParams<{ tripId: string }>();
   const currentId = tripId;
   const [trip, setTrip] = useState<TripInfo | null>(null);
-  const [imageUrls, setimageUrls] = useState<string[]>([]); 
+  const [imageUrls, setimageUrls] = useState<string[]>([]);
   const [allTrips, setAllTrips] = useState<TripRecord[]>([]);
   const pillItems = trip?.travelStyle
     ? [
-        { text: trip.travelStyle, bg: "!bg-pink-50 !text-pink-500" },
-        { text: trip.groupType, bg: "!bg-primary-50 !text-primary-500" },
-        { text: trip.budget, bg: "!bg-success-50 !text-success-700" },
-        { text: trip.interest, bg: "!bg-navy-50 !text-navy-500" },
-      ]
+      { text: trip.travelStyle, bg: "!bg-pink-50 !text-pink-500" },
+      { text: trip.groupType, bg: "!bg-primary-50 !text-primary-500" },
+      { text: trip.budget, bg: "!bg-success-50 !text-success-700" },
+      { text: trip.interest, bg: "!bg-navy-50 !text-navy-500" },
+    ]
     : [];
 
-    const {
-      travelStyle,
-      groupType,
-      budget,
-      interest,
-      duration,
-      itinerary,
-      name,
-      country,
-      description,
-      bestTimeToVisit,
-      weatherInfo,
-      estimatedPrice
-    } = trip || {};
-  
-    const weatherAndTimeVisit = [
-      {text: 'Best Time To Visit :' , item: bestTimeToVisit},
-      {text: 'Weather Info :' , item: weatherInfo},
-    ]
+  const {
+    travelStyle,
+    groupType,
+    budget,
+    interest,
+    duration,
+    itinerary,
+    name,
+    country,
+    description,
+    bestTimeToVisit,
+    weatherInfo,
+    estimatedPrice
+  } = trip || {};
 
- useEffect(() => {
-   const getTrip = async () => {
-     if (!tripId) return;
-    
-     const tripData = await getTripById(tripId);
-     const response = await getAllTrips();
-     
-     setimageUrls(tripData?.imageUrls || []);
-     setTrip(parseMarkdownToJson(tripData?.tripDetails) as TripInfo);
+  const weatherAndTimeVisit = [
+    { text: 'Best Time To Visit :', item: bestTimeToVisit },
+    { text: 'Weather Info :', item: weatherInfo },
+  ]
 
-     const normalizedTrips = (response?.allTrips || [])
-      .filter((trip)=> trip.$id !== currentId)
-      .map((trip) => ({
-       ...trip,
-       tripDetails: parseMarkdownToJson(trip.tripDetails),
-     }));
+  useEffect(() => {
+    const getTrip = async () => {
+      if (!tripId) return;
 
-     setAllTrips(normalizedTrips);
-   };
+      const tripData = await getTripById(tripId);
+      const response = await getAllTrips();
 
-   getTrip();
- }, [tripId, currentId]);
+      setimageUrls(tripData?.imageUrls || []);
+      setTrip(parseMarkdownToJson(tripData?.tripDetails) as TripInfo);
+
+      const normalizedTrips = (response?.allTrips || [])
+        .filter((trip) => trip.$id !== currentId)
+        .map((trip) => ({
+          ...trip,
+          tripDetails: parseMarkdownToJson(trip.tripDetails),
+        }));
+
+      setAllTrips(normalizedTrips);
+    };
+
+    getTrip();
+  }, [tripId, currentId]);
 
 
 
@@ -139,11 +139,10 @@ const TripDetails = () => {
                 src={img}
                 alt="Generated Image"
                 key={i}
-                className={`rounded-xl w-full object-cover ${
-                  i === 0
+                className={`rounded-xl w-full object-cover ${i === 0
                     ? "md:col-span-2 md:row-span-2 h-[330px]"
                     : "md:row-span-1 h-[150px]"
-                }`}
+                  }`}
               />
             ))}
           </section>
@@ -242,7 +241,7 @@ const TripDetails = () => {
             <h2 className="p-24-semibold text-dark-100"> Other Trips</h2>
 
             <div className="trip-grid-limited ">
-              {allTrips.map(({ $id, imageUrls, tripDetails }) => (
+              {allTrips.slice(0, 4).map(({ $id, imageUrls, tripDetails }) => (
                 <Link to={`/trips/${$id}`}>
                   <div
                     className=""

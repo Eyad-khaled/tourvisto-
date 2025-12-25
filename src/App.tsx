@@ -25,9 +25,9 @@ function App() {
     try {
       const user = await account.get();
 
-      if (!user) {
-        return navigate("/sign-in");
-      }
+      // if (!user) {
+      //   return navigate("/sign-in");
+      // }
 
       if (user && location.pathname === "/sign-in") {
         return navigate("/dashboard");
