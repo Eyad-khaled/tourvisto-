@@ -20,36 +20,7 @@ function App() {
 
   const navigate = useNavigate();
   const location = useLocation();
-  // async function clientLoader() {
 
-  //   try {
-  //     const user = await account.get();
-
-  //     // if (!user) {
-  //     //   return navigate("/sign-in");
-  //     // }
-
-  //     if (user && location.pathname === "/sign-in") {
-  //       return navigate("/dashboard");
-  //     }
-  //     if (user && location.pathname === "/") {
-  //       return navigate("/dashboard");
-  //     }
-  //     const existingUser = await getExistingUser();
-  //     //  console.log('existingUser in clientLoader', existingUser?.status);
-  //     // if (existingUser?.status === "user") {
-  //     //   return navigate("/dashboard");
-  //     // }
-
-
-  //     //  console.log('user',user);
-
-  //     return existingUser?.$id ? existingUser : await storeUserData();
-  //   } catch (e) {
-  //     console.log("Error in client loader", e);
-  //     return navigate("/sign-in");
-  //   }
-  // }
 
   const [loadingSession, setLoadingSession] = useState(true);
 
@@ -59,15 +30,15 @@ function App() {
         const sessions = await account.listSessions();
         if (sessions?.sessions?.length) {
           const user = await account.get();
-          if (user.$id && (location.pathname === "/" || location.pathname === "/sign-in")) {
+          if (user.$id && (location.pathname === "/" || user.$id && location.pathname === "/sign-in")) {
             navigate("/dashboard", { replace: true });
           }
-          const existingUser = await getExistingUser();
+          const existingUser = await getExistingUser(user.$id);
           if (!existingUser?.$id) await storeUserData();
         }
       } catch (e) {
         console.error(e);
-        setTimeout(() => navigate("/sign-in", { replace: true }), 500);
+        // setTimeout(() => navigate("/sign-in", { replace: true }), 500);
       } finally {
         setLoadingSession(false);
       }

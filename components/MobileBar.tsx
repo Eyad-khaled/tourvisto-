@@ -1,16 +1,13 @@
 //ts-nocheck
-import { account } from '../app/appwrite/client';
-import { getExistingUser, storeUserData } from '../app/appwrite/auth';
 import { SidebarComponent } from "@syncfusion/ej2-react-navigations";
 import type { SidebarComponent as SidebarRef } from "@syncfusion/ej2-react-navigations";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import type { ComponentType } from "react";
 import NavItems from "./NavItems";
 import { useEffect, useState } from 'react';
 
 const MobileBar = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
+
   const [isMobile, setIsMobile] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   useEffect(() => {
