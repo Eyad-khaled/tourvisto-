@@ -1,5 +1,5 @@
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
-import { Link, Navigate, useNavigate} from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { loginWithGoogle } from "../app/appwrite/auth";
 import { useAppContext } from "@/contexts/appContext";
 import { useEffect } from "react";

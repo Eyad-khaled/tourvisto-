@@ -21,7 +21,6 @@ import { useEffect, useState } from "react";
 import { comboBoxItems, selectItems } from "../app/constants";
 import { formatKey } from "../app/lib/utils";
 import { world_map } from "../app/constants/world_map";
-import { account } from "../app/appwrite/client";
 import { useNavigate } from "react-router-dom";
 import { action } from './api/create-trip'
 import type { FormEvent } from "react";
