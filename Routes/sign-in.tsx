@@ -4,8 +4,8 @@ import { loginWithGoogle, getExistingUser, storeUserData } from "../app/appwrite
 import { account } from "../app/appwrite/client";
 import { useEffect } from "react";
 
-export async function clientLoader(){
-  try{
+export async function clientLoader() {
+  try {
     console.log('Sign-in clientLoader: Checking for OAuth callback');
 
     // Check if we have an active session (OAuth callback)
@@ -21,7 +21,7 @@ export async function clientLoader(){
       const user = await account.get();
       console.log('Sign-in clientLoader: Authenticated user:', user);
 
-      const existingUser = await getExistingUser();
+      const existingUser = await getExistingUser(user.$id);
       console.log('Sign-in clientLoader: Existing user in DB:', existingUser);
 
       // If user exists in database, redirect to dashboard
@@ -47,8 +47,8 @@ export async function clientLoader(){
     console.log('Sign-in clientLoader: No active session, staying on sign-in page');
     // No active session, stay on sign-in page
     return null;
-  } catch(e){
-    console.log('Error during client load' , e);
+  } catch (e) {
+    console.log('Error during client load', e);
     return null;
   }
 }
@@ -65,7 +65,7 @@ const SignIn = () => {
 
         if (hasActiveSession) {
           const user = await account.get();
-          const existingUser = await getExistingUser();
+          const existingUser = await getExistingUser(user.$id);
 
           if (!existingUser) {
             await storeUserData();
@@ -81,10 +81,6 @@ const SignIn = () => {
 
     handleOAuthCallback();
   }, [navigate]);
-
-  return (
-
-
 
   return (
     <main className="auth">

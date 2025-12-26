@@ -2,22 +2,19 @@ import { OAuthProvider, Query } from "appwrite";
 import { account, database, appwriteConfig } from "./client";
 import { redirect } from "react-router";
 
-export const getExistingUser = async () => {
+export const getExistingUser = async (accountId: string) => {
     try {
         const { documents, total } = await database.listDocuments(
             appwriteConfig.databaseId,
             appwriteConfig.userCollectionId,
-            [Query.equal("accountId", (await account.get()).$id)]
+            [Query.equal("accountId", accountId)]
         );
-
-        // console.log('existinguser function',total > 0 ? documents[0] : null);
-
         return total > 0 ? documents[0] : null;
-    } catch (error) {
-        console.error("Error fetching user:", error);
+    } catch {
         return null;
     }
 };
+
 
 export const storeUserData = async () => {
     try {

@@ -45,22 +45,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [loadingTrips, setLoadingTrips] = useState(true);
   const [users, setUsers] = useState<UserType[]>([]); // <--- NEW
   const [loadingUsers, setLoadingUsers] = useState(true);
-  
-  const fetchUsers = async () => {
-    try {
-      const response = await getAllUsers(100, 0); // adjust limit & offset as needed
-      const formattedUsers = response.users.map((u: any) => ({
-        ...u,
-        imageUrl: u.imageUrl || avatars.getInitials(u.name),
-      }));
-      setUsers(formattedUsers);
-    } catch (err) {
-      console.error("Error fetching all users:", err);
-      setUsers([]);
-    } finally {
-      setLoadingUsers(false);
-    }
-  };
+
   useEffect(() => {
     const fetchUser = async () => {
       try {
@@ -70,6 +55,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
         const profilePicture = providerAccessToken
           ? await getGooglePicture(providerAccessToken)
           : null;
+        console.log("providerAccessToken", providerAccessToken);
 
         // Create user in database if not exist
         const tableDB = new TablesDB(client);
@@ -88,7 +74,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
               joinedAt: new Date().toISOString(),
             },
           });
-          await fetchUser();
+          await fetchUsers();
         } catch (err: any) {
           if (!err.message.includes("document already exists")) {
             console.error("Error creating user", err);
@@ -117,6 +103,21 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
         setTrips([]);
       } finally {
         setLoadingTrips(false);
+      }
+    };
+    const fetchUsers = async () => {
+      try {
+        const response = await getAllUsers(100, 0); // adjust limit & offset as needed
+        const formattedUsers = response.users.map((u: any) => ({
+          ...u,
+          imageUrl: u.imageUrl || avatars.getInitials(u.name),
+        }));
+        setUsers(formattedUsers);
+      } catch (err) {
+        console.error("Error fetching all users:", err);
+        setUsers([]);
+      } finally {
+        setLoadingUsers(false);
       }
     };
     fetchUsers()
