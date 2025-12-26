@@ -56,31 +56,33 @@ export async function clientLoader() {
 const SignIn = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    // Handle OAuth callback on component mount
-    const handleOAuthCallback = async () => {
-      try {
-        const sessions = await account.listSessions();
-        const hasActiveSession = sessions?.sessions?.some(session => session.current);
-
-        if (hasActiveSession) {
-          const user = await account.get();
-          const existingUser = await getExistingUser(user.$id);
-
-          if (!existingUser) {
-            await storeUserData();
-          }
-
-          // Use navigate instead of redirect for better iOS compatibility
-          navigate("/dashboard", { replace: true });
-        }
-      } catch (error) {
-        console.error("Error handling OAuth callback:", error);
+ useEffect(() => {
+  const handleOAuthCallback = async () => {
+    try {
+      let session = null;
+      for (let i = 0; i < 5; i++) { // retry 5 times
+        session = await account.getSession("current").catch(() => null);
+        if (session) break;
+        await new Promise(r => setTimeout(r, 300));
       }
-    };
 
-    handleOAuthCallback();
-  }, [navigate]);
+      if (!session) return; // no session yet
+
+      const user = await account.get();
+      const existingUser = await getExistingUser(user.$id);
+
+      if (!existingUser) await storeUserData();
+
+      // Navigate after session is ready
+      navigate("/dashboard", { replace: true });
+    } catch (error) {
+      console.error("OAuth callback error:", error);
+    }
+  };
+
+  handleOAuthCallback();
+}, [navigate]);
+
 
   return (
     <main className="auth">

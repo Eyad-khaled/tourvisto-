@@ -72,7 +72,7 @@ export const loginWithGoogle = async () => {
             // For iOS Safari, use a more compatible OAuth flow
             account.createOAuth2Session(
                 OAuthProvider.Google,
-                `${window.location.origin}/dashboard`,
+                `${window.location.origin}/sign-in`,
                 `${window.location.origin}/sign-in`,
             );
         } else {
@@ -100,7 +100,7 @@ export const logoutUser = async () => {
 export const getUser = async () => {
     try {
         const user = await account.get();
-        // if (!user) return redirect("/sign-in");
+        if (!user) return ;
 
         const { documents } = await database.listDocuments(
             appwriteConfig.databaseId,

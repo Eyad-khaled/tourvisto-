@@ -49,18 +49,32 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        await account.getSession("current");
+        // Step 1: Wait for a valid session (retry up to 3 times)
+        let session: any = null;
+        for (let i = 0; i < 3; i++) {
+          session = await account.getSession("current").catch(() => null);
+          if (session) break;
+          await new Promise((r) => setTimeout(r, 300)); // small delay between retries
+        }
+
+        if (!session) {
+          setUser(null);
+          return;
+        }
+
+        // Step 2: Get the authenticated user
         const currentUser = await account.get();
-        const { providerAccessToken } = (await account.getSession("current")) || {};
+
+        // Step 3: Fetch providerAccessToken (for Google profile picture)
+        const { providerAccessToken } = session || {};
         const profilePicture = providerAccessToken
           ? await getGooglePicture(providerAccessToken)
           : null;
         console.log("providerAccessToken", providerAccessToken);
+        console.log("currentUser", currentUser);
 
-        // Create user in database if not exist
+        // Step 4: Create user in database if not exist
         const tableDB = new TablesDB(client);
-        console.log('current', currentUser);
-
         try {
           await tableDB.createRow({
             databaseId: appwriteConfig.databaseId,
@@ -74,14 +88,23 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
               joinedAt: new Date().toISOString(),
             },
           });
-          await fetchUsers();
+          console.log("User created in DB");
         } catch (err: any) {
           if (!err.message.includes("document already exists")) {
             console.error("Error creating user", err);
+          } else {
+            console.log("User already exists in DB");
           }
         }
 
-        setUser({ ...currentUser, imageUrl: profilePicture || avatars.getInitials(currentUser?.name) });
+        // Step 5: Fetch all users after creating current user
+        await fetchUsers();
+
+        // Step 6: Set user state
+        setUser({
+          ...currentUser,
+          imageUrl: profilePicture || avatars.getInitials(currentUser?.name),
+        });
       } catch (err) {
         console.error("Error fetching user:", err);
         setUser(null);
@@ -89,6 +112,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
         setLoadingUser(false);
       }
     };
+
 
     const fetchTrips = async () => {
       try {

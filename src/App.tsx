@@ -64,8 +64,10 @@ function App() {
       {/* <aside className="children">
         <Outlet />
       </aside> */}
-      {loadingUser ? (<div>Loading user...</div>
-      ) : <Suspense fallback={<div>Loading...</div>}>
+      {loadingUser ? <div>Loading user...</div> : null}
+
+
+      <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/trips/:tripId" element={<TripDetails />} />
@@ -76,8 +78,7 @@ function App() {
           <Route path="/trips" element={<Trips />} />
           <Route path="/trips/create" element={<CreateTrips />} />
         </Routes>
-      </Suspense>}
-
+      </Suspense>
       {/* </div> */}
     </div>
   );
