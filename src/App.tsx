@@ -30,19 +30,18 @@ function App() {
       try {
         const sessions = await account.listSessions();
         if (sessions?.sessions?.length) {
+          if (loadingUser) return;
+
           if (user?.$id && (location.pathname === "/" || location.pathname === "/sign-in")) {
             navigate("/dashboard", { replace: true });
           }
+
           if (location.pathname === "/") {
             if (user?.$id) {
               navigate("/dashboard", { replace: true });
-
             } else {
               navigate("/sign-in", { replace: true });
             }
-          }
-          if (!user?.$id) {
-            navigate("/sign-in", { replace: true });
           }
           const existingUser = await getExistingUser(user?.$id || "");
           if (!existingUser?.$id) await storeUserData();
@@ -56,7 +55,7 @@ function App() {
     };
 
     checkUser();
-  }, [location.pathname, navigate]);
+  }, [location.pathname, navigate, loadingUser]);
 
   if (loadingSession || loadingUser) return <div>Loading session...</div>;
 

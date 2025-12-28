@@ -68,14 +68,33 @@ export const loginWithGoogle = async () => {
         // Detect if we're on iOS Safari
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
         const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        const success = `${window.location.origin}/sign-in`;
+        const failure = `${window.location.origin}/sign-in`;
 
         if (isIOS && isSafari) {
-            // For iOS Safari, use a more compatible OAuth flow
-            account.createOAuth2Session(
-                OAuthProvider.Google,
-                `${window.location.origin}/sign-in`,
-                `${window.location.origin}/sign-in`,
-            );
+            // For iOS Safari, open the Appwrite OAuth endpoint in a popup
+            try {
+                const oauthUrl = `${appwriteConfig.endpointurl}/v1/account/sessions/oauth2/google?success=${encodeURIComponent(success)}&failure=${encodeURIComponent(failure)}`;
+                const popup = window.open(oauthUrl, '_blank', 'width=600,height=700');
+
+                // Poll for session in the parent window — when session exists close popup
+                const interval = setInterval(async () => {
+                    try {
+                        const sessions = await account.listSessions().catch(() => null);
+                        if (sessions?.sessions?.length) {
+                            clearInterval(interval);
+                            try { popup?.close(); } catch { }
+                            // optionally reload to pick up session
+                            window.location.reload();
+                        }
+                    } catch (e) {
+                        // ignore polling errors
+                    }
+                }, 1000);
+            } catch (e) {
+                console.error('Popup OAuth failed, falling back to redirect', e);
+                account.createOAuth2Session(OAuthProvider.Google, success, failure);
+            }
         } else {
             // For other browsers, use the standard flow
             account.createOAuth2Session(
@@ -100,7 +119,7 @@ export const logoutUser = async () => {
 
 export const getUser = async () => {
     try {
-        const {user} = useAppContext()
+        const { user } = useAppContext()
         if (!user) return;
 
         const { documents } = await database.listDocuments(

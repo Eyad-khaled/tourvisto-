@@ -136,7 +136,7 @@ const CreateTrips = () => {
       setLoading(false);
       return;
     }
-    const {user} = useAppContext()
+    const { user } = useAppContext()
     if (!user?.$id) {
       // console.error("error generating trips");
       setLoading(false);
@@ -262,9 +262,9 @@ const CreateTrips = () => {
                 disabled={Loading}
               >
                 <img
-                  className={`size-5 ${Loading ? "animate-spin" : ""}`}
                   src={`/assets/icons/${Loading ? "loader.svg" : "magic-star.svg"
                     }`}
+                  className={`size-5 ${Loading ? "animate-spin" : ""}`}
                   alt=""
                 />
                 <span className="p-16-semibold text-white">
