@@ -77,7 +77,7 @@ export const action = async (formData: TripFormData, setLoading: SetLoadingFn) =
     }`;
 
     const model = genAi.getGenerativeModel({
-      model: "gemini-2.5-flash-lite",
+      model: "gemini-3-flash",
     });
 
     const generateTextResult = await model.generateContent(prompt);
