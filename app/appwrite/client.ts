@@ -14,21 +14,6 @@ const avatars = new Avatars(client)
 const account = new Account(client);
 const database = new Databases(client);
 const storage = new Storage(client);
-async function checkUserStatusAndPerformAction() {
-    try {
-        const user = await account.get();
-        console.log('User is authenticated:', user);
-        // Attempt the action that caused the error here
-        // e.g., await account.updateName('New Name');
-    } catch (error) {
-        console.error('User is not authenticated or an error occurred:', error);
-        if (error.code === 401 || error.type === 'user_unauthorized') { // Check for specific Appwrite error for unauthenticated
-            console.log('User is currently a guest or not logged in.');
-        }
-        // Then attempt the action that caused the original error, expecting it to fail for guests
-    }
-}
 
-// Call this function where the error is triggered
-checkUserStatusAndPerformAction()
+
 export { client, account, database, storage, avatars };
