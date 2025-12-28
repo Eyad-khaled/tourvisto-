@@ -24,23 +24,21 @@ function App() {
   const location = useLocation();
 
 
-  const [loadingSession, setLoadingSession] = useState(true);
-  useEffect(() => {
-    if (loadingUser) return;
-    if (user?.$id && (location.pathname === "/" || location.pathname === "/sign-in")) {
-      navigate("/dashboard", { replace: true });
-    }
 
-    if (location.pathname === "/") {
-      if (user?.$id) {
-        navigate("/dashboard", { replace: true });
-      } else {
-        navigate("/sign-in", { replace: true });
-      }
-    } if (!user?.$id) {
-      // console.error("error generating trips");
+  const [loadingSession, setLoadingSession] = useState(true);
+  if (user?.$id && (location.pathname === "/" || location.pathname === "/sign-in")) {
+    navigate("/dashboard", { replace: true });
+  }
+
+  if (location.pathname === "/") {
+    if (user?.$id) {
+      navigate("/dashboard", { replace: true });
+    } else {
       navigate("/sign-in", { replace: true });
     }
+  }
+  useEffect(() => {
+    if (loadingUser) return;
   }, [])
   useEffect(() => {
     const checkUser = async () => {
