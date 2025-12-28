@@ -1,6 +1,5 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { sidebarItems } from "../app/constants";
-import { logoutUser } from "../app/appwrite/auth";
 import { useAppContext } from "../src/contexts/appContext";
 
 
@@ -9,10 +8,10 @@ type NavItemsProps = {
 };
 
 const NavItems = ({ handleClick }: NavItemsProps) => {
-    const { user} = useAppContext();
+  const { user, logout } = useAppContext();
   const navigate = useNavigate();
   const logOut = async () => {
-    await logoutUser();
+    await logout();
     navigate("/sign-in");
   };
   // const [img, setImg] = useState("");

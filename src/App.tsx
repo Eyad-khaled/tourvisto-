@@ -15,6 +15,7 @@ import Trips from '../Routes/trips'
 import TripDetails from '../Routes/tripDetails'
 import { lazy, Suspense } from "react";
 import { useAppContext } from "./contexts/appContext";
+import { MoonLoader } from "react-spinners";
 
 const CreateTrips = lazy(() => import("../Routes/createTrips"));
 function App() {
@@ -24,7 +25,23 @@ function App() {
 
 
   const [loadingSession, setLoadingSession] = useState(true);
+  useEffect(() => {
+    if (loadingUser) return;
+    if (user?.$id && (location.pathname === "/" || location.pathname === "/sign-in")) {
+      navigate("/dashboard", { replace: true });
+    }
 
+    if (location.pathname === "/") {
+      if (user?.$id) {
+        navigate("/dashboard", { replace: true });
+      } else {
+        navigate("/sign-in", { replace: true });
+      }
+    } if (!user?.$id) {
+      // console.error("error generating trips");
+      navigate("/sign-in", { replace: true });
+    }
+  }, [])
   useEffect(() => {
     const checkUser = async () => {
       try {
@@ -57,7 +74,7 @@ function App() {
     checkUser();
   }, [location.pathname, navigate, loadingUser]);
 
-  if (loadingSession || loadingUser) return <div>Loading session...</div>;
+  if (loadingSession || loadingUser) return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} className="h-[100vh] w-full"><MoonLoader color="#256ff1" /></div>;
 
 
   return (

@@ -27,6 +27,7 @@ type AppContextType = {
   loadingUser: boolean;
   loadingTrips: boolean;
   loadingUsers: boolean;       // <--- NEW
+  logout: () => Promise<void>;
 };
 
 const AppContext = createContext<AppContextType>({
@@ -36,6 +37,7 @@ const AppContext = createContext<AppContextType>({
   loadingUser: true,
   loadingTrips: true,
   loadingUsers: true,
+  logout: async () => { },
 });
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
@@ -45,6 +47,16 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [loadingTrips, setLoadingTrips] = useState(true);
   const [users, setUsers] = useState<UserType[]>([]); // <--- NEW
   const [loadingUsers, setLoadingUsers] = useState(true);
+
+  const logout = async () => {
+    try {
+      await account.deleteSession("current");
+    } catch (err) {
+      console.error("Error deleting session:", err);
+    } finally {
+      setUser(null);
+    }
+  };
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -146,7 +158,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   return (
-    <AppContext.Provider value={{ user, trips, users, loadingUser, loadingTrips, loadingUsers }}>
+    <AppContext.Provider value={{ user, trips, users, loadingUser, loadingTrips, loadingUsers, logout }}>
       {children}
     </AppContext.Provider>
   );

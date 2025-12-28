@@ -111,6 +111,7 @@ export const loginWithGoogle = async () => {
 export const logoutUser = async () => {
     try {
         await account.deleteSession("current");
+        redirect("/sign-in");
     } catch (error) {
         console.error("Error during logout:", error);
     }
