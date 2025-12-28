@@ -60,6 +60,7 @@ const fetchCountries = async () => {
 };
 const CreateTrips = () => {
   const navigate = useNavigate();
+  const { user } = useAppContext();
   const [CountriesData, setCountriesData] = useState<{ text: string; value: string }[]>([]);
 
   const [FormData, setFormData] = useState<TripFormData>({
@@ -136,35 +137,24 @@ const CreateTrips = () => {
       setLoading(false);
       return;
     }
-    const { user } = useAppContext()
     if (!user?.$id) {
-      // console.error("error generating trips");
+      setError("User not authenticated. Please log in first.");
       setLoading(false);
       return;
     }
     try {
-      console.log('######################',);
-      const response = await (action({ ...FormData, userId: user.$id }, setLoading))
-      //  const result = await response.json()
-      //  console.log('resulttt' ,result);
-      if (response.$id) navigate(`/trips/${response.$id}`)
-      else console.error(Error);
-
-      console.log(response);
-
-
-      //  const response = await action(FormDat a ,setLoading)
-      //  console.log('heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee ', response);
-
-      // if (result.id) {
-      //   navigate(`/trips/${result.id}`);
-      // } else {
-      //   setError("Failed to generate trip");
-      //   console.error("failed to generate trip");
-      // }
+      setError(null);
+      const response = await action({ ...FormData, userId: user.$id }, setLoading);
+      if (response?.$id) {
+        navigate(`/trips/${response.$id}`);
+      } else {
+        setError("Failed to generate trip. Please try again.");
+        setLoading(false);
+      }
     } catch (error) {
-      setError("An error occurred while generating the trip");
+      setError(`Error generating trip: ${error instanceof Error ? error.message : 'Unknown error'}`);
       console.error(error);
+      setLoading(false);
     }
   };
   return (
