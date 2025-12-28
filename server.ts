@@ -95,7 +95,7 @@ app.post("/api/create-trip", async (req: Request, res: Response) => {
     ]
     }`;
 
-    const model = genAi.getGenerativeModel({ model: "gemini-3-flash" });
+    const model = genAi.getGenerativeModel({ model: "gemini-1.5-flash" });
     const textResult = await model.generateContent([prompt]);
 
     const trip = parseMarkdownToJson(textResult.response.text());
