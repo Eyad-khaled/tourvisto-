@@ -97,7 +97,7 @@ function App() {
           {/* <Route path="/" element={<Dashboard />} /> */}
           <Route path="/api/create-trip" element={<SignIn />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/all-users" element={<AllUsers />} />
+          {/* <Route path="/all-users" element={<AllUsers />} /> */}
           <Route path="/trips" element={<Trips />} />
           <Route path="/trips/create" element={<CreateTrips />} />
         </Routes>

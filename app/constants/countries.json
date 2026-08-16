@@ -1,0 +1,2492 @@
+[
+  {
+    "name": "Afghanistan",
+    "value": "Afghanistan",
+    "countryCode": "AF",
+    "coordinates": [
+      33.0,
+      65.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=33.0&mlon=65.0#map=5/33.0/65.0"
+  },
+  {
+    "name": "Albania",
+    "value": "Albania",
+    "countryCode": "AL",
+    "coordinates": [
+      41.0,
+      20.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=41.0&mlon=20.0#map=5/41.0/20.0"
+  },
+  {
+    "name": "Algeria",
+    "value": "Algeria",
+    "countryCode": "DZ",
+    "coordinates": [
+      28.0,
+      3.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=28.0&mlon=3.0#map=5/28.0/3.0"
+  },
+  {
+    "name": "American Samoa",
+    "value": "American Samoa",
+    "countryCode": "AS",
+    "coordinates": [
+      -14.33333333,
+      -170.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-14.33333333&mlon=-170.0#map=5/-14.33333333/-170.0"
+  },
+  {
+    "name": "Andorra",
+    "value": "Andorra",
+    "countryCode": "AD",
+    "coordinates": [
+      42.5462,
+      1.6016
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=42.5462&mlon=1.6016#map=5/42.5462/1.6016"
+  },
+  {
+    "name": "Angola",
+    "value": "Angola",
+    "countryCode": "AO",
+    "coordinates": [
+      -12.5,
+      18.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-12.5&mlon=18.5#map=5/-12.5/18.5"
+  },
+  {
+    "name": "Anguilla",
+    "value": "Anguilla",
+    "countryCode": "AI",
+    "coordinates": [
+      18.25,
+      -63.16666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=18.25&mlon=-63.16666666#map=5/18.25/-63.16666666"
+  },
+  {
+    "name": "Antarctica",
+    "value": "Antarctica",
+    "countryCode": "AQ",
+    "coordinates": [
+      -75.2509,
+      -0.0714
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-75.2509&mlon=-0.0714#map=5/-75.2509/-0.0714"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "value": "Antigua and Barbuda",
+    "countryCode": "AG",
+    "coordinates": [
+      17.05,
+      -61.8
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=17.05&mlon=-61.8#map=5/17.05/-61.8"
+  },
+  {
+    "name": "Argentina",
+    "value": "Argentina",
+    "countryCode": "AR",
+    "coordinates": [
+      -34.0,
+      -64.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-34.0&mlon=-64.0#map=5/-34.0/-64.0"
+  },
+  {
+    "name": "Armenia",
+    "value": "Armenia",
+    "countryCode": "AM",
+    "coordinates": [
+      40.0,
+      45.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=40.0&mlon=45.0#map=5/40.0/45.0"
+  },
+  {
+    "name": "Aruba",
+    "value": "Aruba",
+    "countryCode": "AW",
+    "coordinates": [
+      12.5,
+      -69.96666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=12.5&mlon=-69.96666666#map=5/12.5/-69.96666666"
+  },
+  {
+    "name": "Australia",
+    "value": "Australia",
+    "countryCode": "AU",
+    "coordinates": [
+      -27.0,
+      133.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-27.0&mlon=133.0#map=5/-27.0/133.0"
+  },
+  {
+    "name": "Austria",
+    "value": "Austria",
+    "countryCode": "AT",
+    "coordinates": [
+      47.33333333,
+      13.33333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=47.33333333&mlon=13.33333333#map=5/47.33333333/13.33333333"
+  },
+  {
+    "name": "Azerbaijan",
+    "value": "Azerbaijan",
+    "countryCode": "AZ",
+    "coordinates": [
+      40.5,
+      47.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=40.5&mlon=47.5#map=5/40.5/47.5"
+  },
+  {
+    "name": "Bahamas",
+    "value": "Bahamas",
+    "countryCode": "BS",
+    "coordinates": [
+      24.25,
+      -76.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=24.25&mlon=-76.0#map=5/24.25/-76.0"
+  },
+  {
+    "name": "Bahrain",
+    "value": "Bahrain",
+    "countryCode": "BH",
+    "coordinates": [
+      26.0,
+      50.55
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=26.0&mlon=50.55#map=5/26.0/50.55"
+  },
+  {
+    "name": "Bangladesh",
+    "value": "Bangladesh",
+    "countryCode": "BD",
+    "coordinates": [
+      24.0,
+      90.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=24.0&mlon=90.0#map=5/24.0/90.0"
+  },
+  {
+    "name": "Barbados",
+    "value": "Barbados",
+    "countryCode": "BB",
+    "coordinates": [
+      13.16666666,
+      -59.53333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=13.16666666&mlon=-59.53333333#map=5/13.16666666/-59.53333333"
+  },
+  {
+    "name": "Belarus",
+    "value": "Belarus",
+    "countryCode": "BY",
+    "coordinates": [
+      53.0,
+      28.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=53.0&mlon=28.0#map=5/53.0/28.0"
+  },
+  {
+    "name": "Belgium",
+    "value": "Belgium",
+    "countryCode": "BE",
+    "coordinates": [
+      50.83333333,
+      4.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=50.83333333&mlon=4.0#map=5/50.83333333/4.0"
+  },
+  {
+    "name": "Belize",
+    "value": "Belize",
+    "countryCode": "BZ",
+    "coordinates": [
+      17.25,
+      -88.75
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=17.25&mlon=-88.75#map=5/17.25/-88.75"
+  },
+  {
+    "name": "Benin",
+    "value": "Benin",
+    "countryCode": "BJ",
+    "coordinates": [
+      9.5,
+      2.25
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=9.5&mlon=2.25#map=5/9.5/2.25"
+  },
+  {
+    "name": "Bermuda",
+    "value": "Bermuda",
+    "countryCode": "BM",
+    "coordinates": [
+      32.33333333,
+      -64.75
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=32.33333333&mlon=-64.75#map=5/32.33333333/-64.75"
+  },
+  {
+    "name": "Bhutan",
+    "value": "Bhutan",
+    "countryCode": "BT",
+    "coordinates": [
+      27.5,
+      90.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=27.5&mlon=90.5#map=5/27.5/90.5"
+  },
+  {
+    "name": "Bolivia",
+    "value": "Bolivia",
+    "countryCode": "BO",
+    "coordinates": [
+      -17.0,
+      -65.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-17.0&mlon=-65.0#map=5/-17.0/-65.0"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "value": "Bosnia and Herzegovina",
+    "countryCode": "BA",
+    "coordinates": [
+      44.0,
+      18.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=44.0&mlon=18.0#map=5/44.0/18.0"
+  },
+  {
+    "name": "Botswana",
+    "value": "Botswana",
+    "countryCode": "BW",
+    "coordinates": [
+      -22.0,
+      24.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-22.0&mlon=24.0#map=5/-22.0/24.0"
+  },
+  {
+    "name": "Bouvet Island",
+    "value": "Bouvet Island",
+    "countryCode": "BV",
+    "coordinates": [
+      -54.4232,
+      3.4132
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-54.4232&mlon=3.4132#map=5/-54.4232/3.4132"
+  },
+  {
+    "name": "Brazil",
+    "value": "Brazil",
+    "countryCode": "BR",
+    "coordinates": [
+      -10.0,
+      -55.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-10.0&mlon=-55.0#map=5/-10.0/-55.0"
+  },
+  {
+    "name": "British Indian Ocean Territory",
+    "value": "British Indian Ocean Territory",
+    "countryCode": "IO",
+    "coordinates": [
+      -6.0,
+      71.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-6.0&mlon=71.5#map=5/-6.0/71.5"
+  },
+  {
+    "name": "British Virgin Islands",
+    "value": "British Virgin Islands",
+    "countryCode": "VG",
+    "coordinates": [
+      18.4207,
+      -64.64
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=18.4207&mlon=-64.64#map=5/18.4207/-64.64"
+  },
+  {
+    "name": "Brunei",
+    "value": "Brunei",
+    "countryCode": "BN",
+    "coordinates": [
+      4.5,
+      114.66666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=4.5&mlon=114.66666666#map=5/4.5/114.66666666"
+  },
+  {
+    "name": "Bulgaria",
+    "value": "Bulgaria",
+    "countryCode": "BG",
+    "coordinates": [
+      43.0,
+      25.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=43.0&mlon=25.0#map=5/43.0/25.0"
+  },
+  {
+    "name": "Burkina Faso",
+    "value": "Burkina Faso",
+    "countryCode": "BF",
+    "coordinates": [
+      13.0,
+      -2.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=13.0&mlon=-2.0#map=5/13.0/-2.0"
+  },
+  {
+    "name": "Burundi",
+    "value": "Burundi",
+    "countryCode": "BI",
+    "coordinates": [
+      -3.5,
+      30.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-3.5&mlon=30.0#map=5/-3.5/30.0"
+  },
+  {
+    "name": "Cambodia",
+    "value": "Cambodia",
+    "countryCode": "KH",
+    "coordinates": [
+      13.0,
+      105.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=13.0&mlon=105.0#map=5/13.0/105.0"
+  },
+  {
+    "name": "Cameroon",
+    "value": "Cameroon",
+    "countryCode": "CM",
+    "coordinates": [
+      6.0,
+      12.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=6.0&mlon=12.0#map=5/6.0/12.0"
+  },
+  {
+    "name": "Canada",
+    "value": "Canada",
+    "countryCode": "CA",
+    "coordinates": [
+      60.0,
+      -95.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=60.0&mlon=-95.0#map=5/60.0/-95.0"
+  },
+  {
+    "name": "Cape Verde",
+    "value": "Cape Verde",
+    "countryCode": "CV",
+    "coordinates": [
+      16.0,
+      -24.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=16.0&mlon=-24.0#map=5/16.0/-24.0"
+  },
+  {
+    "name": "Caribbean Netherlands",
+    "value": "Caribbean Netherlands",
+    "countryCode": "BQ",
+    "coordinates": [
+      12.1784,
+      -68.2385
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=12.1784&mlon=-68.2385#map=5/12.1784/-68.2385"
+  },
+  {
+    "name": "Cayman Islands",
+    "value": "Cayman Islands",
+    "countryCode": "KY",
+    "coordinates": [
+      19.5,
+      -80.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=19.5&mlon=-80.5#map=5/19.5/-80.5"
+  },
+  {
+    "name": "Central African Republic",
+    "value": "Central African Republic",
+    "countryCode": "CF",
+    "coordinates": [
+      7.0,
+      21.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=7.0&mlon=21.0#map=5/7.0/21.0"
+  },
+  {
+    "name": "Chad",
+    "value": "Chad",
+    "countryCode": "TD",
+    "coordinates": [
+      15.0,
+      19.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=15.0&mlon=19.0#map=5/15.0/19.0"
+  },
+  {
+    "name": "Chile",
+    "value": "Chile",
+    "countryCode": "CL",
+    "coordinates": [
+      -30.0,
+      -71.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-30.0&mlon=-71.0#map=5/-30.0/-71.0"
+  },
+  {
+    "name": "China",
+    "value": "China",
+    "countryCode": "CN",
+    "coordinates": [
+      35.0,
+      105.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=35.0&mlon=105.0#map=5/35.0/105.0"
+  },
+  {
+    "name": "Christmas Island",
+    "value": "Christmas Island",
+    "countryCode": "CX",
+    "coordinates": [
+      -10.5,
+      105.66666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-10.5&mlon=105.66666666#map=5/-10.5/105.66666666"
+  },
+  {
+    "name": "Cocos (Keeling) Islands",
+    "value": "Cocos (Keeling) Islands",
+    "countryCode": "CC",
+    "coordinates": [
+      -12.5,
+      96.83333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-12.5&mlon=96.83333333#map=5/-12.5/96.83333333"
+  },
+  {
+    "name": "Colombia",
+    "value": "Colombia",
+    "countryCode": "CO",
+    "coordinates": [
+      4.0,
+      -72.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=4.0&mlon=-72.0#map=5/4.0/-72.0"
+  },
+  {
+    "name": "Comoros",
+    "value": "Comoros",
+    "countryCode": "KM",
+    "coordinates": [
+      -12.16666666,
+      44.25
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-12.16666666&mlon=44.25#map=5/-12.16666666/44.25"
+  },
+  {
+    "name": "Cook Islands",
+    "value": "Cook Islands",
+    "countryCode": "CK",
+    "coordinates": [
+      -21.23333333,
+      -159.76666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-21.23333333&mlon=-159.76666666#map=5/-21.23333333/-159.76666666"
+  },
+  {
+    "name": "Costa Rica",
+    "value": "Costa Rica",
+    "countryCode": "CR",
+    "coordinates": [
+      10.0,
+      -84.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=10.0&mlon=-84.0#map=5/10.0/-84.0"
+  },
+  {
+    "name": "Croatia",
+    "value": "Croatia",
+    "countryCode": "HR",
+    "coordinates": [
+      45.16666666,
+      15.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=45.16666666&mlon=15.5#map=5/45.16666666/15.5"
+  },
+  {
+    "name": "Cuba",
+    "value": "Cuba",
+    "countryCode": "CU",
+    "coordinates": [
+      21.5,
+      -80.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=21.5&mlon=-80.0#map=5/21.5/-80.0"
+  },
+  {
+    "name": "Curaçao",
+    "value": "Curaçao",
+    "countryCode": "CW",
+    "coordinates": [
+      12.1696,
+      -68.99
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=12.1696&mlon=-68.99#map=5/12.1696/-68.99"
+  },
+  {
+    "name": "Cyprus",
+    "value": "Cyprus",
+    "countryCode": "CY",
+    "coordinates": [
+      35.0,
+      33.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=35.0&mlon=33.0#map=5/35.0/33.0"
+  },
+  {
+    "name": "Czechia",
+    "value": "Czechia",
+    "countryCode": "CZ",
+    "coordinates": [
+      49.75,
+      15.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=49.75&mlon=15.5#map=5/49.75/15.5"
+  },
+  {
+    "name": "Côte d'Ivoire",
+    "value": "Côte d'Ivoire",
+    "countryCode": "CI",
+    "coordinates": [
+      8.0,
+      -5.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=8.0&mlon=-5.0#map=5/8.0/-5.0"
+  },
+  {
+    "name": "Democratic Republic of the Congo",
+    "value": "Democratic Republic of the Congo",
+    "countryCode": "CD",
+    "coordinates": [
+      0.0,
+      25.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=0.0&mlon=25.0#map=5/0.0/25.0"
+  },
+  {
+    "name": "Denmark",
+    "value": "Denmark",
+    "countryCode": "DK",
+    "coordinates": [
+      56.0,
+      10.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=56.0&mlon=10.0#map=5/56.0/10.0"
+  },
+  {
+    "name": "Djibouti",
+    "value": "Djibouti",
+    "countryCode": "DJ",
+    "coordinates": [
+      11.5,
+      43.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=11.5&mlon=43.0#map=5/11.5/43.0"
+  },
+  {
+    "name": "Dominica",
+    "value": "Dominica",
+    "countryCode": "DM",
+    "coordinates": [
+      15.41666666,
+      -61.33333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=15.41666666&mlon=-61.33333333#map=5/15.41666666/-61.33333333"
+  },
+  {
+    "name": "Dominican Republic",
+    "value": "Dominican Republic",
+    "countryCode": "DO",
+    "coordinates": [
+      19.0,
+      -70.66666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=19.0&mlon=-70.66666666#map=5/19.0/-70.66666666"
+  },
+  {
+    "name": "Ecuador",
+    "value": "Ecuador",
+    "countryCode": "EC",
+    "coordinates": [
+      -2.0,
+      -77.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-2.0&mlon=-77.5#map=5/-2.0/-77.5"
+  },
+  {
+    "name": "Egypt",
+    "value": "Egypt",
+    "countryCode": "EG",
+    "coordinates": [
+      27.0,
+      30.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=27.0&mlon=30.0#map=5/27.0/30.0"
+  },
+  {
+    "name": "El Salvador",
+    "value": "El Salvador",
+    "countryCode": "SV",
+    "coordinates": [
+      13.83333333,
+      -88.91666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=13.83333333&mlon=-88.91666666#map=5/13.83333333/-88.91666666"
+  },
+  {
+    "name": "Equatorial Guinea",
+    "value": "Equatorial Guinea",
+    "countryCode": "GQ",
+    "coordinates": [
+      2.0,
+      10.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=2.0&mlon=10.0#map=5/2.0/10.0"
+  },
+  {
+    "name": "Eritrea",
+    "value": "Eritrea",
+    "countryCode": "ER",
+    "coordinates": [
+      15.0,
+      39.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=15.0&mlon=39.0#map=5/15.0/39.0"
+  },
+  {
+    "name": "Estonia",
+    "value": "Estonia",
+    "countryCode": "EE",
+    "coordinates": [
+      59.0,
+      26.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=59.0&mlon=26.0#map=5/59.0/26.0"
+  },
+  {
+    "name": "Eswatini",
+    "value": "Eswatini",
+    "countryCode": "SZ",
+    "coordinates": [
+      -26.5,
+      31.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-26.5&mlon=31.5#map=5/-26.5/31.5"
+  },
+  {
+    "name": "Ethiopia",
+    "value": "Ethiopia",
+    "countryCode": "ET",
+    "coordinates": [
+      8.0,
+      38.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=8.0&mlon=38.0#map=5/8.0/38.0"
+  },
+  {
+    "name": "Falkland Islands",
+    "value": "Falkland Islands",
+    "countryCode": "FK",
+    "coordinates": [
+      -51.75,
+      -59.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-51.75&mlon=-59.0#map=5/-51.75/-59.0"
+  },
+  {
+    "name": "Faroe Islands",
+    "value": "Faroe Islands",
+    "countryCode": "FO",
+    "coordinates": [
+      62.0,
+      -7.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=62.0&mlon=-7.0#map=5/62.0/-7.0"
+  },
+  {
+    "name": "Federated States of Micronesia",
+    "value": "Federated States of Micronesia",
+    "countryCode": "FM",
+    "coordinates": [
+      6.91666666,
+      158.25
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=6.91666666&mlon=158.25#map=5/6.91666666/158.25"
+  },
+  {
+    "name": "Fiji",
+    "value": "Fiji",
+    "countryCode": "FJ",
+    "coordinates": [
+      -18.0,
+      175.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-18.0&mlon=175.0#map=5/-18.0/175.0"
+  },
+  {
+    "name": "Finland",
+    "value": "Finland",
+    "countryCode": "FI",
+    "coordinates": [
+      64.0,
+      26.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=64.0&mlon=26.0#map=5/64.0/26.0"
+  },
+  {
+    "name": "France",
+    "value": "France",
+    "countryCode": "FR",
+    "coordinates": [
+      46.0,
+      2.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=46.0&mlon=2.0#map=5/46.0/2.0"
+  },
+  {
+    "name": "French Guiana",
+    "value": "French Guiana",
+    "countryCode": "GF",
+    "coordinates": [
+      4.0,
+      -53.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=4.0&mlon=-53.0#map=5/4.0/-53.0"
+  },
+  {
+    "name": "French Polynesia",
+    "value": "French Polynesia",
+    "countryCode": "PF",
+    "coordinates": [
+      -15.0,
+      -140.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-15.0&mlon=-140.0#map=5/-15.0/-140.0"
+  },
+  {
+    "name": "French Southern and Antarctic Lands",
+    "value": "French Southern and Antarctic Lands",
+    "countryCode": "TF",
+    "coordinates": [
+      -49.25,
+      69.167
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-49.25&mlon=69.167#map=5/-49.25/69.167"
+  },
+  {
+    "name": "Gabon",
+    "value": "Gabon",
+    "countryCode": "GA",
+    "coordinates": [
+      -1.0,
+      11.75
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-1.0&mlon=11.75#map=5/-1.0/11.75"
+  },
+  {
+    "name": "Gambia",
+    "value": "Gambia",
+    "countryCode": "GM",
+    "coordinates": [
+      13.46666666,
+      -16.56666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=13.46666666&mlon=-16.56666666#map=5/13.46666666/-16.56666666"
+  },
+  {
+    "name": "Georgia",
+    "value": "Georgia",
+    "countryCode": "GE",
+    "coordinates": [
+      42.0,
+      43.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=42.0&mlon=43.5#map=5/42.0/43.5"
+  },
+  {
+    "name": "Germany",
+    "value": "Germany",
+    "countryCode": "DE",
+    "coordinates": [
+      51.0,
+      9.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=51.0&mlon=9.0#map=5/51.0/9.0"
+  },
+  {
+    "name": "Ghana",
+    "value": "Ghana",
+    "countryCode": "GH",
+    "coordinates": [
+      8.0,
+      -2.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=8.0&mlon=-2.0#map=5/8.0/-2.0"
+  },
+  {
+    "name": "Gibraltar",
+    "value": "Gibraltar",
+    "countryCode": "GI",
+    "coordinates": [
+      36.13333333,
+      -5.35
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=36.13333333&mlon=-5.35#map=5/36.13333333/-5.35"
+  },
+  {
+    "name": "Greece",
+    "value": "Greece",
+    "countryCode": "GR",
+    "coordinates": [
+      39.0,
+      22.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=39.0&mlon=22.0#map=5/39.0/22.0"
+  },
+  {
+    "name": "Greenland",
+    "value": "Greenland",
+    "countryCode": "GL",
+    "coordinates": [
+      72.0,
+      -40.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=72.0&mlon=-40.0#map=5/72.0/-40.0"
+  },
+  {
+    "name": "Grenada",
+    "value": "Grenada",
+    "countryCode": "GD",
+    "coordinates": [
+      12.11666666,
+      -61.66666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=12.11666666&mlon=-61.66666666#map=5/12.11666666/-61.66666666"
+  },
+  {
+    "name": "Guadeloupe",
+    "value": "Guadeloupe",
+    "countryCode": "GP",
+    "coordinates": [
+      16.25,
+      -61.583333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=16.25&mlon=-61.583333#map=5/16.25/-61.583333"
+  },
+  {
+    "name": "Guam",
+    "value": "Guam",
+    "countryCode": "GU",
+    "coordinates": [
+      13.46666666,
+      144.78333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=13.46666666&mlon=144.78333333#map=5/13.46666666/144.78333333"
+  },
+  {
+    "name": "Guatemala",
+    "value": "Guatemala",
+    "countryCode": "GT",
+    "coordinates": [
+      15.5,
+      -90.25
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=15.5&mlon=-90.25#map=5/15.5/-90.25"
+  },
+  {
+    "name": "Guernsey",
+    "value": "Guernsey",
+    "countryCode": "GG",
+    "coordinates": [
+      49.46666666,
+      -2.58333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=49.46666666&mlon=-2.58333333#map=5/49.46666666/-2.58333333"
+  },
+  {
+    "name": "Guinea",
+    "value": "Guinea",
+    "countryCode": "GN",
+    "coordinates": [
+      11.0,
+      -10.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=11.0&mlon=-10.0#map=5/11.0/-10.0"
+  },
+  {
+    "name": "Guinea-Bissau",
+    "value": "Guinea-Bissau",
+    "countryCode": "GW",
+    "coordinates": [
+      12.0,
+      -15.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=12.0&mlon=-15.0#map=5/12.0/-15.0"
+  },
+  {
+    "name": "Guyana",
+    "value": "Guyana",
+    "countryCode": "GY",
+    "coordinates": [
+      5.0,
+      -59.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=5.0&mlon=-59.0#map=5/5.0/-59.0"
+  },
+  {
+    "name": "Haiti",
+    "value": "Haiti",
+    "countryCode": "HT",
+    "coordinates": [
+      19.0,
+      -72.41666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=19.0&mlon=-72.41666666#map=5/19.0/-72.41666666"
+  },
+  {
+    "name": "Heard Island and McDonald Islands",
+    "value": "Heard Island and McDonald Islands",
+    "countryCode": "HM",
+    "coordinates": [
+      -53.1,
+      72.51666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-53.1&mlon=72.51666666#map=5/-53.1/72.51666666"
+  },
+  {
+    "name": "Honduras",
+    "value": "Honduras",
+    "countryCode": "HN",
+    "coordinates": [
+      15.0,
+      -86.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=15.0&mlon=-86.5#map=5/15.0/-86.5"
+  },
+  {
+    "name": "Hong Kong",
+    "value": "Hong Kong",
+    "countryCode": "HK",
+    "coordinates": [
+      22.25,
+      114.16666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=22.25&mlon=114.16666666#map=5/22.25/114.16666666"
+  },
+  {
+    "name": "Hungary",
+    "value": "Hungary",
+    "countryCode": "HU",
+    "coordinates": [
+      47.0,
+      20.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=47.0&mlon=20.0#map=5/47.0/20.0"
+  },
+  {
+    "name": "Iceland",
+    "value": "Iceland",
+    "countryCode": "IS",
+    "coordinates": [
+      65.0,
+      -18.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=65.0&mlon=-18.0#map=5/65.0/-18.0"
+  },
+  {
+    "name": "India",
+    "value": "India",
+    "countryCode": "IN",
+    "coordinates": [
+      20.0,
+      77.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=20.0&mlon=77.0#map=5/20.0/77.0"
+  },
+  {
+    "name": "Indonesia",
+    "value": "Indonesia",
+    "countryCode": "ID",
+    "coordinates": [
+      -5.0,
+      120.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-5.0&mlon=120.0#map=5/-5.0/120.0"
+  },
+  {
+    "name": "Iran",
+    "value": "Iran",
+    "countryCode": "IR",
+    "coordinates": [
+      32.0,
+      53.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=32.0&mlon=53.0#map=5/32.0/53.0"
+  },
+  {
+    "name": "Iraq",
+    "value": "Iraq",
+    "countryCode": "IQ",
+    "coordinates": [
+      33.0,
+      44.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=33.0&mlon=44.0#map=5/33.0/44.0"
+  },
+  {
+    "name": "Ireland",
+    "value": "Ireland",
+    "countryCode": "IE",
+    "coordinates": [
+      53.0,
+      -8.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=53.0&mlon=-8.0#map=5/53.0/-8.0"
+  },
+  {
+    "name": "Isle of Man",
+    "value": "Isle of Man",
+    "countryCode": "IM",
+    "coordinates": [
+      54.25,
+      -4.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=54.25&mlon=-4.5#map=5/54.25/-4.5"
+  },
+  {
+    "name": "Israel",
+    "value": "Israel",
+    "countryCode": "IL",
+    "coordinates": [
+      31.5,
+      34.75
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=31.5&mlon=34.75#map=5/31.5/34.75"
+  },
+  {
+    "name": "Italy",
+    "value": "Italy",
+    "countryCode": "IT",
+    "coordinates": [
+      42.83333333,
+      12.83333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=42.83333333&mlon=12.83333333#map=5/42.83333333/12.83333333"
+  },
+  {
+    "name": "Jamaica",
+    "value": "Jamaica",
+    "countryCode": "JM",
+    "coordinates": [
+      18.25,
+      -77.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=18.25&mlon=-77.5#map=5/18.25/-77.5"
+  },
+  {
+    "name": "Japan",
+    "value": "Japan",
+    "countryCode": "JP",
+    "coordinates": [
+      36.0,
+      138.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=36.0&mlon=138.0#map=5/36.0/138.0"
+  },
+  {
+    "name": "Jersey",
+    "value": "Jersey",
+    "countryCode": "JE",
+    "coordinates": [
+      49.25,
+      -2.16666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=49.25&mlon=-2.16666666#map=5/49.25/-2.16666666"
+  },
+  {
+    "name": "Jordan",
+    "value": "Jordan",
+    "countryCode": "JO",
+    "coordinates": [
+      31.0,
+      36.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=31.0&mlon=36.0#map=5/31.0/36.0"
+  },
+  {
+    "name": "Kazakhstan",
+    "value": "Kazakhstan",
+    "countryCode": "KZ",
+    "coordinates": [
+      48.0,
+      68.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=48.0&mlon=68.0#map=5/48.0/68.0"
+  },
+  {
+    "name": "Kenya",
+    "value": "Kenya",
+    "countryCode": "KE",
+    "coordinates": [
+      1.0,
+      38.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=1.0&mlon=38.0#map=5/1.0/38.0"
+  },
+  {
+    "name": "Kiribati",
+    "value": "Kiribati",
+    "countryCode": "KI",
+    "coordinates": [
+      1.41666666,
+      173.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=1.41666666&mlon=173.0#map=5/1.41666666/173.0"
+  },
+  {
+    "name": "Kuwait",
+    "value": "Kuwait",
+    "countryCode": "KW",
+    "coordinates": [
+      29.5,
+      45.75
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=29.5&mlon=45.75#map=5/29.5/45.75"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "value": "Kyrgyzstan",
+    "countryCode": "KG",
+    "coordinates": [
+      41.0,
+      75.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=41.0&mlon=75.0#map=5/41.0/75.0"
+  },
+  {
+    "name": "Laos",
+    "value": "Laos",
+    "countryCode": "LA",
+    "coordinates": [
+      18.0,
+      105.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=18.0&mlon=105.0#map=5/18.0/105.0"
+  },
+  {
+    "name": "Latvia",
+    "value": "Latvia",
+    "countryCode": "LV",
+    "coordinates": [
+      57.0,
+      25.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=57.0&mlon=25.0#map=5/57.0/25.0"
+  },
+  {
+    "name": "Lebanon",
+    "value": "Lebanon",
+    "countryCode": "LB",
+    "coordinates": [
+      33.83333333,
+      35.83333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=33.83333333&mlon=35.83333333#map=5/33.83333333/35.83333333"
+  },
+  {
+    "name": "Lesotho",
+    "value": "Lesotho",
+    "countryCode": "LS",
+    "coordinates": [
+      -29.5,
+      28.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-29.5&mlon=28.5#map=5/-29.5/28.5"
+  },
+  {
+    "name": "Liberia",
+    "value": "Liberia",
+    "countryCode": "LR",
+    "coordinates": [
+      6.5,
+      -9.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=6.5&mlon=-9.5#map=5/6.5/-9.5"
+  },
+  {
+    "name": "Libya",
+    "value": "Libya",
+    "countryCode": "LY",
+    "coordinates": [
+      25.0,
+      17.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=25.0&mlon=17.0#map=5/25.0/17.0"
+  },
+  {
+    "name": "Liechtenstein",
+    "value": "Liechtenstein",
+    "countryCode": "LI",
+    "coordinates": [
+      47.26666666,
+      9.53333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=47.26666666&mlon=9.53333333#map=5/47.26666666/9.53333333"
+  },
+  {
+    "name": "Lithuania",
+    "value": "Lithuania",
+    "countryCode": "LT",
+    "coordinates": [
+      56.0,
+      24.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=56.0&mlon=24.0#map=5/56.0/24.0"
+  },
+  {
+    "name": "Luxembourg",
+    "value": "Luxembourg",
+    "countryCode": "LU",
+    "coordinates": [
+      49.75,
+      6.16666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=49.75&mlon=6.16666666#map=5/49.75/6.16666666"
+  },
+  {
+    "name": "Macau",
+    "value": "Macau",
+    "countryCode": "MO",
+    "coordinates": [
+      22.16666666,
+      113.55
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=22.16666666&mlon=113.55#map=5/22.16666666/113.55"
+  },
+  {
+    "name": "Madagascar",
+    "value": "Madagascar",
+    "countryCode": "MG",
+    "coordinates": [
+      -20.0,
+      47.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-20.0&mlon=47.0#map=5/-20.0/47.0"
+  },
+  {
+    "name": "Malawi",
+    "value": "Malawi",
+    "countryCode": "MW",
+    "coordinates": [
+      -13.5,
+      34.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-13.5&mlon=34.0#map=5/-13.5/34.0"
+  },
+  {
+    "name": "Malaysia",
+    "value": "Malaysia",
+    "countryCode": "MY",
+    "coordinates": [
+      2.5,
+      112.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=2.5&mlon=112.5#map=5/2.5/112.5"
+  },
+  {
+    "name": "Maldives",
+    "value": "Maldives",
+    "countryCode": "MV",
+    "coordinates": [
+      3.25,
+      73.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=3.25&mlon=73.0#map=5/3.25/73.0"
+  },
+  {
+    "name": "Mali",
+    "value": "Mali",
+    "countryCode": "ML",
+    "coordinates": [
+      17.0,
+      -4.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=17.0&mlon=-4.0#map=5/17.0/-4.0"
+  },
+  {
+    "name": "Malta",
+    "value": "Malta",
+    "countryCode": "MT",
+    "coordinates": [
+      35.83333333,
+      14.58333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=35.83333333&mlon=14.58333333#map=5/35.83333333/14.58333333"
+  },
+  {
+    "name": "Marshall Islands",
+    "value": "Marshall Islands",
+    "countryCode": "MH",
+    "coordinates": [
+      9.0,
+      168.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=9.0&mlon=168.0#map=5/9.0/168.0"
+  },
+  {
+    "name": "Martinique",
+    "value": "Martinique",
+    "countryCode": "MQ",
+    "coordinates": [
+      14.666667,
+      -61.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=14.666667&mlon=-61.0#map=5/14.666667/-61.0"
+  },
+  {
+    "name": "Mauritania",
+    "value": "Mauritania",
+    "countryCode": "MR",
+    "coordinates": [
+      20.0,
+      -12.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=20.0&mlon=-12.0#map=5/20.0/-12.0"
+  },
+  {
+    "name": "Mauritius",
+    "value": "Mauritius",
+    "countryCode": "MU",
+    "coordinates": [
+      -20.28333333,
+      57.55
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-20.28333333&mlon=57.55#map=5/-20.28333333/57.55"
+  },
+  {
+    "name": "Mayotte",
+    "value": "Mayotte",
+    "countryCode": "YT",
+    "coordinates": [
+      -12.83333333,
+      45.16666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-12.83333333&mlon=45.16666666#map=5/-12.83333333/45.16666666"
+  },
+  {
+    "name": "Mexico",
+    "value": "Mexico",
+    "countryCode": "MX",
+    "coordinates": [
+      23.0,
+      -102.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=23.0&mlon=-102.0#map=5/23.0/-102.0"
+  },
+  {
+    "name": "Moldova",
+    "value": "Moldova",
+    "countryCode": "MD",
+    "coordinates": [
+      47.0,
+      29.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=47.0&mlon=29.0#map=5/47.0/29.0"
+  },
+  {
+    "name": "Monaco",
+    "value": "Monaco",
+    "countryCode": "MC",
+    "coordinates": [
+      43.73333333,
+      7.4
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=43.73333333&mlon=7.4#map=5/43.73333333/7.4"
+  },
+  {
+    "name": "Mongolia",
+    "value": "Mongolia",
+    "countryCode": "MN",
+    "coordinates": [
+      46.0,
+      105.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=46.0&mlon=105.0#map=5/46.0/105.0"
+  },
+  {
+    "name": "Montenegro",
+    "value": "Montenegro",
+    "countryCode": "ME",
+    "coordinates": [
+      42.7087,
+      19.3744
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=42.7087&mlon=19.3744#map=5/42.7087/19.3744"
+  },
+  {
+    "name": "Montserrat",
+    "value": "Montserrat",
+    "countryCode": "MS",
+    "coordinates": [
+      16.75,
+      -62.2
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=16.75&mlon=-62.2#map=5/16.75/-62.2"
+  },
+  {
+    "name": "Morocco",
+    "value": "Morocco",
+    "countryCode": "MA",
+    "coordinates": [
+      32.0,
+      -5.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=32.0&mlon=-5.0#map=5/32.0/-5.0"
+  },
+  {
+    "name": "Mozambique",
+    "value": "Mozambique",
+    "countryCode": "MZ",
+    "coordinates": [
+      -18.25,
+      35.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-18.25&mlon=35.0#map=5/-18.25/35.0"
+  },
+  {
+    "name": "Myanmar",
+    "value": "Myanmar",
+    "countryCode": "MM",
+    "coordinates": [
+      21.9162,
+      95.956
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=21.9162&mlon=95.956#map=5/21.9162/95.956"
+  },
+  {
+    "name": "Namibia",
+    "value": "Namibia",
+    "countryCode": "NA",
+    "coordinates": [
+      -22.0,
+      17.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-22.0&mlon=17.0#map=5/-22.0/17.0"
+  },
+  {
+    "name": "Nauru",
+    "value": "Nauru",
+    "countryCode": "NR",
+    "coordinates": [
+      -0.53333333,
+      166.91666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-0.53333333&mlon=166.91666666#map=5/-0.53333333/166.91666666"
+  },
+  {
+    "name": "Nepal",
+    "value": "Nepal",
+    "countryCode": "NP",
+    "coordinates": [
+      28.0,
+      84.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=28.0&mlon=84.0#map=5/28.0/84.0"
+  },
+  {
+    "name": "Netherlands",
+    "value": "Netherlands",
+    "countryCode": "NL",
+    "coordinates": [
+      52.5,
+      5.75
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=52.5&mlon=5.75#map=5/52.5/5.75"
+  },
+  {
+    "name": "New Caledonia",
+    "value": "New Caledonia",
+    "countryCode": "NC",
+    "coordinates": [
+      -21.5,
+      165.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-21.5&mlon=165.5#map=5/-21.5/165.5"
+  },
+  {
+    "name": "New Zealand",
+    "value": "New Zealand",
+    "countryCode": "NZ",
+    "coordinates": [
+      -41.0,
+      174.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-41.0&mlon=174.0#map=5/-41.0/174.0"
+  },
+  {
+    "name": "Nicaragua",
+    "value": "Nicaragua",
+    "countryCode": "NI",
+    "coordinates": [
+      13.0,
+      -85.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=13.0&mlon=-85.0#map=5/13.0/-85.0"
+  },
+  {
+    "name": "Niger",
+    "value": "Niger",
+    "countryCode": "NE",
+    "coordinates": [
+      16.0,
+      8.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=16.0&mlon=8.0#map=5/16.0/8.0"
+  },
+  {
+    "name": "Nigeria",
+    "value": "Nigeria",
+    "countryCode": "NG",
+    "coordinates": [
+      10.0,
+      8.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=10.0&mlon=8.0#map=5/10.0/8.0"
+  },
+  {
+    "name": "Niue",
+    "value": "Niue",
+    "countryCode": "NU",
+    "coordinates": [
+      -19.03333333,
+      -169.86666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-19.03333333&mlon=-169.86666666#map=5/-19.03333333/-169.86666666"
+  },
+  {
+    "name": "Norfolk Island",
+    "value": "Norfolk Island",
+    "countryCode": "NF",
+    "coordinates": [
+      -29.03333333,
+      167.95
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-29.03333333&mlon=167.95#map=5/-29.03333333/167.95"
+  },
+  {
+    "name": "North Korea",
+    "value": "North Korea",
+    "countryCode": "KP",
+    "coordinates": [
+      40.0,
+      127.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=40.0&mlon=127.0#map=5/40.0/127.0"
+  },
+  {
+    "name": "North Macedonia",
+    "value": "North Macedonia",
+    "countryCode": "MK",
+    "coordinates": [
+      41.83333333,
+      22.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=41.83333333&mlon=22.0#map=5/41.83333333/22.0"
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "value": "Northern Mariana Islands",
+    "countryCode": "MP",
+    "coordinates": [
+      15.2,
+      145.75
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=15.2&mlon=145.75#map=5/15.2/145.75"
+  },
+  {
+    "name": "Norway",
+    "value": "Norway",
+    "countryCode": "NO",
+    "coordinates": [
+      62.0,
+      10.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=62.0&mlon=10.0#map=5/62.0/10.0"
+  },
+  {
+    "name": "Oman",
+    "value": "Oman",
+    "countryCode": "OM",
+    "coordinates": [
+      21.0,
+      57.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=21.0&mlon=57.0#map=5/21.0/57.0"
+  },
+  {
+    "name": "Pakistan",
+    "value": "Pakistan",
+    "countryCode": "PK",
+    "coordinates": [
+      30.0,
+      70.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=30.0&mlon=70.0#map=5/30.0/70.0"
+  },
+  {
+    "name": "Palau",
+    "value": "Palau",
+    "countryCode": "PW",
+    "coordinates": [
+      7.5,
+      134.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=7.5&mlon=134.5#map=5/7.5/134.5"
+  },
+  {
+    "name": "Palestine",
+    "value": "Palestine",
+    "countryCode": "PS",
+    "coordinates": [
+      31.9522,
+      35.2332
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=31.9522&mlon=35.2332#map=5/31.9522/35.2332"
+  },
+  {
+    "name": "Panama",
+    "value": "Panama",
+    "countryCode": "PA",
+    "coordinates": [
+      9.0,
+      -80.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=9.0&mlon=-80.0#map=5/9.0/-80.0"
+  },
+  {
+    "name": "Papua New Guinea",
+    "value": "Papua New Guinea",
+    "countryCode": "PG",
+    "coordinates": [
+      -6.0,
+      147.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-6.0&mlon=147.0#map=5/-6.0/147.0"
+  },
+  {
+    "name": "Paraguay",
+    "value": "Paraguay",
+    "countryCode": "PY",
+    "coordinates": [
+      -23.0,
+      -58.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-23.0&mlon=-58.0#map=5/-23.0/-58.0"
+  },
+  {
+    "name": "Peru",
+    "value": "Peru",
+    "countryCode": "PE",
+    "coordinates": [
+      -10.0,
+      -76.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-10.0&mlon=-76.0#map=5/-10.0/-76.0"
+  },
+  {
+    "name": "Philippines",
+    "value": "Philippines",
+    "countryCode": "PH",
+    "coordinates": [
+      13.0,
+      122.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=13.0&mlon=122.0#map=5/13.0/122.0"
+  },
+  {
+    "name": "Pitcairn Islands",
+    "value": "Pitcairn Islands",
+    "countryCode": "PN",
+    "coordinates": [
+      -25.06666666,
+      -130.1
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-25.06666666&mlon=-130.1#map=5/-25.06666666/-130.1"
+  },
+  {
+    "name": "Poland",
+    "value": "Poland",
+    "countryCode": "PL",
+    "coordinates": [
+      52.0,
+      20.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=52.0&mlon=20.0#map=5/52.0/20.0"
+  },
+  {
+    "name": "Portugal",
+    "value": "Portugal",
+    "countryCode": "PT",
+    "coordinates": [
+      39.5,
+      -8.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=39.5&mlon=-8.0#map=5/39.5/-8.0"
+  },
+  {
+    "name": "Puerto Rico",
+    "value": "Puerto Rico",
+    "countryCode": "PR",
+    "coordinates": [
+      18.25,
+      -66.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=18.25&mlon=-66.5#map=5/18.25/-66.5"
+  },
+  {
+    "name": "Qatar",
+    "value": "Qatar",
+    "countryCode": "QA",
+    "coordinates": [
+      25.5,
+      51.25
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=25.5&mlon=51.25#map=5/25.5/51.25"
+  },
+  {
+    "name": "Republic of the Congo",
+    "value": "Republic of the Congo",
+    "countryCode": "CG",
+    "coordinates": [
+      -1.0,
+      15.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-1.0&mlon=15.0#map=5/-1.0/15.0"
+  },
+  {
+    "name": "Romania",
+    "value": "Romania",
+    "countryCode": "RO",
+    "coordinates": [
+      46.0,
+      25.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=46.0&mlon=25.0#map=5/46.0/25.0"
+  },
+  {
+    "name": "Russia",
+    "value": "Russia",
+    "countryCode": "RU",
+    "coordinates": [
+      60.0,
+      100.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=60.0&mlon=100.0#map=5/60.0/100.0"
+  },
+  {
+    "name": "Rwanda",
+    "value": "Rwanda",
+    "countryCode": "RW",
+    "coordinates": [
+      -2.0,
+      30.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-2.0&mlon=30.0#map=5/-2.0/30.0"
+  },
+  {
+    "name": "Réunion",
+    "value": "Réunion",
+    "countryCode": "RE",
+    "coordinates": [
+      -21.15,
+      55.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-21.15&mlon=55.5#map=5/-21.15/55.5"
+  },
+  {
+    "name": "Saint Barthélemy",
+    "value": "Saint Barthélemy",
+    "countryCode": "BL",
+    "coordinates": [
+      17.9,
+      -62.8333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=17.9&mlon=-62.8333#map=5/17.9/-62.8333"
+  },
+  {
+    "name": "Saint Helena",
+    "value": "Saint Helena",
+    "countryCode": "SH",
+    "coordinates": [
+      -15.95,
+      -5.7
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-15.95&mlon=-5.7#map=5/-15.95/-5.7"
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "value": "Saint Kitts and Nevis",
+    "countryCode": "KN",
+    "coordinates": [
+      17.33333333,
+      -62.75
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=17.33333333&mlon=-62.75#map=5/17.33333333/-62.75"
+  },
+  {
+    "name": "Saint Lucia",
+    "value": "Saint Lucia",
+    "countryCode": "LC",
+    "coordinates": [
+      13.88333333,
+      -60.96666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=13.88333333&mlon=-60.96666666#map=5/13.88333333/-60.96666666"
+  },
+  {
+    "name": "Saint Martin",
+    "value": "Saint Martin",
+    "countryCode": "MF",
+    "coordinates": [
+      18.0708,
+      -63.0501
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=18.0708&mlon=-63.0501#map=5/18.0708/-63.0501"
+  },
+  {
+    "name": "Saint Pierre and Miquelon",
+    "value": "Saint Pierre and Miquelon",
+    "countryCode": "PM",
+    "coordinates": [
+      46.83333333,
+      -56.33333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=46.83333333&mlon=-56.33333333#map=5/46.83333333/-56.33333333"
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "value": "Saint Vincent and the Grenadines",
+    "countryCode": "VC",
+    "coordinates": [
+      13.25,
+      -61.2
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=13.25&mlon=-61.2#map=5/13.25/-61.2"
+  },
+  {
+    "name": "Samoa",
+    "value": "Samoa",
+    "countryCode": "WS",
+    "coordinates": [
+      -13.58333333,
+      -172.33333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-13.58333333&mlon=-172.33333333#map=5/-13.58333333/-172.33333333"
+  },
+  {
+    "name": "San Marino",
+    "value": "San Marino",
+    "countryCode": "SM",
+    "coordinates": [
+      43.76666666,
+      12.41666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=43.76666666&mlon=12.41666666#map=5/43.76666666/12.41666666"
+  },
+  {
+    "name": "Saudi Arabia",
+    "value": "Saudi Arabia",
+    "countryCode": "SA",
+    "coordinates": [
+      25.0,
+      45.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=25.0&mlon=45.0#map=5/25.0/45.0"
+  },
+  {
+    "name": "Senegal",
+    "value": "Senegal",
+    "countryCode": "SN",
+    "coordinates": [
+      14.0,
+      -14.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=14.0&mlon=-14.0#map=5/14.0/-14.0"
+  },
+  {
+    "name": "Serbia",
+    "value": "Serbia",
+    "countryCode": "RS",
+    "coordinates": [
+      44.1305021,
+      16.4284181
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=44.1305021&mlon=16.4284181#map=5/44.1305021/16.4284181"
+  },
+  {
+    "name": "Seychelles",
+    "value": "Seychelles",
+    "countryCode": "SC",
+    "coordinates": [
+      -4.58333333,
+      55.66666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-4.58333333&mlon=55.66666666#map=5/-4.58333333/55.66666666"
+  },
+  {
+    "name": "Sierra Leone",
+    "value": "Sierra Leone",
+    "countryCode": "SL",
+    "coordinates": [
+      8.5,
+      -11.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=8.5&mlon=-11.5#map=5/8.5/-11.5"
+  },
+  {
+    "name": "Singapore",
+    "value": "Singapore",
+    "countryCode": "SG",
+    "coordinates": [
+      1.36666666,
+      103.8
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=1.36666666&mlon=103.8#map=5/1.36666666/103.8"
+  },
+  {
+    "name": "Sint Maarten",
+    "value": "Sint Maarten",
+    "countryCode": "SX",
+    "coordinates": [
+      18.0425,
+      -63.0548
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=18.0425&mlon=-63.0548#map=5/18.0425/-63.0548"
+  },
+  {
+    "name": "Slovakia",
+    "value": "Slovakia",
+    "countryCode": "SK",
+    "coordinates": [
+      48.66666666,
+      19.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=48.66666666&mlon=19.5#map=5/48.66666666/19.5"
+  },
+  {
+    "name": "Slovenia",
+    "value": "Slovenia",
+    "countryCode": "SI",
+    "coordinates": [
+      46.11666666,
+      14.81666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=46.11666666&mlon=14.81666666#map=5/46.11666666/14.81666666"
+  },
+  {
+    "name": "Solomon Islands",
+    "value": "Solomon Islands",
+    "countryCode": "SB",
+    "coordinates": [
+      -8.0,
+      159.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-8.0&mlon=159.0#map=5/-8.0/159.0"
+  },
+  {
+    "name": "Somalia",
+    "value": "Somalia",
+    "countryCode": "SO",
+    "coordinates": [
+      10.0,
+      49.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=10.0&mlon=49.0#map=5/10.0/49.0"
+  },
+  {
+    "name": "South Africa",
+    "value": "South Africa",
+    "countryCode": "ZA",
+    "coordinates": [
+      -29.0,
+      24.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-29.0&mlon=24.0#map=5/-29.0/24.0"
+  },
+  {
+    "name": "South Georgia",
+    "value": "South Georgia",
+    "countryCode": "GS",
+    "coordinates": [
+      -54.5,
+      -37.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-54.5&mlon=-37.0#map=5/-54.5/-37.0"
+  },
+  {
+    "name": "South Korea",
+    "value": "South Korea",
+    "countryCode": "KR",
+    "coordinates": [
+      37.0,
+      127.5
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=37.0&mlon=127.5#map=5/37.0/127.5"
+  },
+  {
+    "name": "South Sudan",
+    "value": "South Sudan",
+    "countryCode": "SS",
+    "coordinates": [
+      7.0,
+      30.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=7.0&mlon=30.0#map=5/7.0/30.0"
+  },
+  {
+    "name": "Spain",
+    "value": "Spain",
+    "countryCode": "ES",
+    "coordinates": [
+      40.0,
+      -4.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=40.0&mlon=-4.0#map=5/40.0/-4.0"
+  },
+  {
+    "name": "Sri Lanka",
+    "value": "Sri Lanka",
+    "countryCode": "LK",
+    "coordinates": [
+      7.0,
+      81.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=7.0&mlon=81.0#map=5/7.0/81.0"
+  },
+  {
+    "name": "Sudan",
+    "value": "Sudan",
+    "countryCode": "SD",
+    "coordinates": [
+      15.0,
+      30.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=15.0&mlon=30.0#map=5/15.0/30.0"
+  },
+  {
+    "name": "Suriname",
+    "value": "Suriname",
+    "countryCode": "SR",
+    "coordinates": [
+      4.0,
+      -56.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=4.0&mlon=-56.0#map=5/4.0/-56.0"
+  },
+  {
+    "name": "Svalbard and Jan Mayen",
+    "value": "Svalbard and Jan Mayen",
+    "countryCode": "SJ",
+    "coordinates": [
+      78.0,
+      20.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=78.0&mlon=20.0#map=5/78.0/20.0"
+  },
+  {
+    "name": "Sweden",
+    "value": "Sweden",
+    "countryCode": "SE",
+    "coordinates": [
+      62.0,
+      15.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=62.0&mlon=15.0#map=5/62.0/15.0"
+  },
+  {
+    "name": "Switzerland",
+    "value": "Switzerland",
+    "countryCode": "CH",
+    "coordinates": [
+      47.0,
+      8.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=47.0&mlon=8.0#map=5/47.0/8.0"
+  },
+  {
+    "name": "Syria",
+    "value": "Syria",
+    "countryCode": "SY",
+    "coordinates": [
+      35.0,
+      38.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=35.0&mlon=38.0#map=5/35.0/38.0"
+  },
+  {
+    "name": "São Tomé and Príncipe",
+    "value": "São Tomé and Príncipe",
+    "countryCode": "ST",
+    "coordinates": [
+      1.0,
+      7.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=1.0&mlon=7.0#map=5/1.0/7.0"
+  },
+  {
+    "name": "Taiwan",
+    "value": "Taiwan",
+    "countryCode": "TW",
+    "coordinates": [
+      23.5,
+      121.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=23.5&mlon=121.0#map=5/23.5/121.0"
+  },
+  {
+    "name": "Tajikistan",
+    "value": "Tajikistan",
+    "countryCode": "TJ",
+    "coordinates": [
+      39.0,
+      71.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=39.0&mlon=71.0#map=5/39.0/71.0"
+  },
+  {
+    "name": "Tanzania",
+    "value": "Tanzania",
+    "countryCode": "TZ",
+    "coordinates": [
+      -6.0,
+      35.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-6.0&mlon=35.0#map=5/-6.0/35.0"
+  },
+  {
+    "name": "Thailand",
+    "value": "Thailand",
+    "countryCode": "TH",
+    "coordinates": [
+      15.0,
+      100.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=15.0&mlon=100.0#map=5/15.0/100.0"
+  },
+  {
+    "name": "Timor-Leste",
+    "value": "Timor-Leste",
+    "countryCode": "TL",
+    "coordinates": [
+      -8.83333333,
+      125.91666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-8.83333333&mlon=125.91666666#map=5/-8.83333333/125.91666666"
+  },
+  {
+    "name": "Togo",
+    "value": "Togo",
+    "countryCode": "TG",
+    "coordinates": [
+      8.0,
+      1.16666666
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=8.0&mlon=1.16666666#map=5/8.0/1.16666666"
+  },
+  {
+    "name": "Tokelau",
+    "value": "Tokelau",
+    "countryCode": "TK",
+    "coordinates": [
+      -9.0,
+      -172.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-9.0&mlon=-172.0#map=5/-9.0/-172.0"
+  },
+  {
+    "name": "Tonga",
+    "value": "Tonga",
+    "countryCode": "TO",
+    "coordinates": [
+      -20.0,
+      -175.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-20.0&mlon=-175.0#map=5/-20.0/-175.0"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "value": "Trinidad and Tobago",
+    "countryCode": "TT",
+    "coordinates": [
+      11.0,
+      -61.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=11.0&mlon=-61.0#map=5/11.0/-61.0"
+  },
+  {
+    "name": "Tunisia",
+    "value": "Tunisia",
+    "countryCode": "TN",
+    "coordinates": [
+      34.0,
+      9.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=34.0&mlon=9.0#map=5/34.0/9.0"
+  },
+  {
+    "name": "Turkey",
+    "value": "Turkey",
+    "countryCode": "TR",
+    "coordinates": [
+      39.0,
+      35.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=39.0&mlon=35.0#map=5/39.0/35.0"
+  },
+  {
+    "name": "Turkmenistan",
+    "value": "Turkmenistan",
+    "countryCode": "TM",
+    "coordinates": [
+      40.0,
+      60.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=40.0&mlon=60.0#map=5/40.0/60.0"
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "value": "Turks and Caicos Islands",
+    "countryCode": "TC",
+    "coordinates": [
+      21.694,
+      -71.7979
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=21.694&mlon=-71.7979#map=5/21.694/-71.7979"
+  },
+  {
+    "name": "Tuvalu",
+    "value": "Tuvalu",
+    "countryCode": "TV",
+    "coordinates": [
+      -8.0,
+      178.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-8.0&mlon=178.0#map=5/-8.0/178.0"
+  },
+  {
+    "name": "U.S. Virgin Islands",
+    "value": "U.S. Virgin Islands",
+    "countryCode": "VI",
+    "coordinates": [
+      18.3358,
+      -64.8963
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=18.3358&mlon=-64.8963#map=5/18.3358/-64.8963"
+  },
+  {
+    "name": "Uganda",
+    "value": "Uganda",
+    "countryCode": "UG",
+    "coordinates": [
+      1.0,
+      32.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=1.0&mlon=32.0#map=5/1.0/32.0"
+  },
+  {
+    "name": "Ukraine",
+    "value": "Ukraine",
+    "countryCode": "UA",
+    "coordinates": [
+      49.0,
+      32.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=49.0&mlon=32.0#map=5/49.0/32.0"
+  },
+  {
+    "name": "United Arab Emirates",
+    "value": "United Arab Emirates",
+    "countryCode": "AE",
+    "coordinates": [
+      24.0,
+      54.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=24.0&mlon=54.0#map=5/24.0/54.0"
+  },
+  {
+    "name": "United Kingdom",
+    "value": "United Kingdom",
+    "countryCode": "GB",
+    "coordinates": [
+      54.0,
+      -2.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=54.0&mlon=-2.0#map=5/54.0/-2.0"
+  },
+  {
+    "name": "United States",
+    "value": "United States",
+    "countryCode": "US",
+    "coordinates": [
+      38.0,
+      -97.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=38.0&mlon=-97.0#map=5/38.0/-97.0"
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "value": "United States Minor Outlying Islands",
+    "countryCode": "UM",
+    "coordinates": [
+      19.2823,
+      166.647
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=19.2823&mlon=166.647#map=5/19.2823/166.647"
+  },
+  {
+    "name": "Uruguay",
+    "value": "Uruguay",
+    "countryCode": "UY",
+    "coordinates": [
+      -33.0,
+      -56.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-33.0&mlon=-56.0#map=5/-33.0/-56.0"
+  },
+  {
+    "name": "Uzbekistan",
+    "value": "Uzbekistan",
+    "countryCode": "UZ",
+    "coordinates": [
+      41.0,
+      64.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=41.0&mlon=64.0#map=5/41.0/64.0"
+  },
+  {
+    "name": "Vanuatu",
+    "value": "Vanuatu",
+    "countryCode": "VU",
+    "coordinates": [
+      -16.0,
+      167.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-16.0&mlon=167.0#map=5/-16.0/167.0"
+  },
+  {
+    "name": "Vatican City",
+    "value": "Vatican City",
+    "countryCode": "VA",
+    "coordinates": [
+      41.9029,
+      12.4534
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=41.9029&mlon=12.4534#map=5/41.9029/12.4534"
+  },
+  {
+    "name": "Venezuela",
+    "value": "Venezuela",
+    "countryCode": "VE",
+    "coordinates": [
+      8.0,
+      -66.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=8.0&mlon=-66.0#map=5/8.0/-66.0"
+  },
+  {
+    "name": "Vietnam",
+    "value": "Vietnam",
+    "countryCode": "VN",
+    "coordinates": [
+      16.16666666,
+      107.83333333
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=16.16666666&mlon=107.83333333#map=5/16.16666666/107.83333333"
+  },
+  {
+    "name": "Wallis and Futuna",
+    "value": "Wallis and Futuna",
+    "countryCode": "WF",
+    "coordinates": [
+      -13.3,
+      -176.2
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-13.3&mlon=-176.2#map=5/-13.3/-176.2"
+  },
+  {
+    "name": "Western Sahara",
+    "value": "Western Sahara",
+    "countryCode": "EH",
+    "coordinates": [
+      24.5,
+      -13.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=24.5&mlon=-13.0#map=5/24.5/-13.0"
+  },
+  {
+    "name": "Yemen",
+    "value": "Yemen",
+    "countryCode": "YE",
+    "coordinates": [
+      15.0,
+      48.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=15.0&mlon=48.0#map=5/15.0/48.0"
+  },
+  {
+    "name": "Zambia",
+    "value": "Zambia",
+    "countryCode": "ZM",
+    "coordinates": [
+      -15.0,
+      30.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-15.0&mlon=30.0#map=5/-15.0/30.0"
+  },
+  {
+    "name": "Zimbabwe",
+    "value": "Zimbabwe",
+    "countryCode": "ZW",
+    "coordinates": [
+      -20.0,
+      30.0
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=-20.0&mlon=30.0#map=5/-20.0/30.0"
+  },
+  {
+    "name": "Åland Islands",
+    "value": "Åland Islands",
+    "countryCode": "AX",
+    "coordinates": [
+      60.1785,
+      19.9156
+    ],
+    "openStreetMap": "https://www.openstreetmap.org/?mlat=60.1785&mlon=19.9156#map=5/60.1785/19.9156"
+  }
+]

@@ -1,12 +1,3 @@
-// import Header from "../components/Header";
-
-// import {
-//   MapsComponent,
-//   LayersDirective,
-//   LayerDirective,
-// } from "@syncfusion/ej2-react-maps";
-// import { ComboBoxComponent } from "@syncfusion/ej2-react-dropdowns";
-// import { SidebarComponent } from "@syncfusion/ej2-react-navigations";
 import {
   MapsComponent,
   LayersDirective,
@@ -17,21 +8,23 @@ import MobileBar from "../components/MobileBar";
 import "../src/App.css";
 import NavItems from "../components/NavItems";
 import Header from "../components/Header";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { comboBoxItems, selectItems } from "../app/constants";
 import { formatKey } from "../app/lib/utils";
 import { world_map } from "../app/constants/world_map";
 import { useNavigate } from "react-router-dom";
-import { action } from './api/create-trip'
+import { action } from "./api/create-trip";
 import type { FormEvent } from "react";
 import { Combobox } from "../components/ComboBox";
 import { useAppContext } from "@/contexts/appContext";
+import countries from "../app/constants/countries.json";
 
 type CountryOption = {
   name: string;
-  cordinates: number[];
   value: string;
-  openStreetMap?: string;
+  countryCode: string;
+  coordinates: number[];
+  openStreetMap: string;
 };
 
 type TripFormData = {
@@ -44,24 +37,20 @@ type TripFormData = {
   userId: string;
 };
 
-type TripSelectKey = Extract<keyof TripFormData, "groupType" | "travelStyle" | "interest" | "budget">;
+type TripSelectKey = Extract<
+  keyof TripFormData,
+  "groupType" | "travelStyle" | "interest" | "budget"
+>;
 
-const fetchCountries = async () => {
-  const response = await fetch(
-    "https://restcountries.com/v3.1/all?fields=countries,name,maps,latlng"
-  );
-  const data: any[] = await response.json();
-  return data.map((e: any) => ({
-    name: e.name.common,
-    cordinates: e.latlng,
-    value: e.name.common,
-    openStreetMap: e.maps.openStreetMaps,
-  }));
-};
+const countryData = countries as CountryOption[];
+
 const CreateTrips = () => {
   const navigate = useNavigate();
   const { user } = useAppContext();
-  const [CountriesData, setCountriesData] = useState<{ text: string; value: string }[]>([]);
+
+  const [CountriesData, setCountriesData] = useState<
+    { text: string; value: string }[]
+  >([]);
 
   const [FormData, setFormData] = useState<TripFormData>({
     country: "",
@@ -72,57 +61,58 @@ const CreateTrips = () => {
     groupType: "",
     userId: "",
   });
-  const handleChange = (key: keyof TripFormData, value: TripFormData[keyof TripFormData]) => {
-    setFormData({ ...FormData, [key]: value });
-  };
-  const [MapData, setMapData] = useState<{ country: string; color: string; coordinates?: number[] | CountryOption }[]>([]);
-  const [allCountries, setAllCountries] = useState<CountryOption[]>([]);
+
   const [Loading, setLoading] = useState(false);
-  const [Error, setError] = useState<null | string>(null);
+  const [Error, setError] = useState<string | null>(null);
+
   const selectableKeys = selectItems as TripSelectKey[];
+
+  // Build the dropdown once from the local JSON.
   useEffect(() => {
-    const loadCountries = async () => {
-      const data = await fetchCountries();
-      setAllCountries(data);
-      setCountriesData(
-        data.map((e: CountryOption) => ({
-          text: e.name,
-          value: e.value,
-        }))
-      );
-    };
-    loadCountries();
+    setCountriesData(
+      countryData.map((country) => ({
+        text: country.name,
+        value: country.value,
+      }))
+    );
   }, []);
-  useEffect(() => {
 
-    const setForm = async () =>
-      setFormData({
-        country: "",
-        travelStyle: "",
-        interest: "",
-        budget: "",
-        duration: 0,
-        groupType: "",
-        userId: "",
-      });
-    setForm();
-  }, [CountriesData]);
-  useEffect(() => {
-    const setMap = async () =>
-      setMapData([
-        {
-          country: FormData.country,
-          color: "#ea382e",
-          coordinates: allCountries.find(
-            (c) => c.name === FormData.country
-          )?.cordinates,
-        },
-      ]);
+  const selectedCountry = useMemo(
+    () => countryData.find((country) => country.name === FormData.country),
+    [FormData.country]
+  );
 
-    setMap();
-  }, [FormData]);
+  // Syncfusion only needs the country name for shapeDataPath.
+  // The coordinates remain available in selectedCountry for future use.
+  const MapData = useMemo(() => {
+    if (!selectedCountry) return [];
+
+    return [
+      {
+        country: selectedCountry.name,
+        color: "#ea382e",
+        coordinates: selectedCountry.coordinates,
+      },
+    ];
+  }, [selectedCountry]);
+
+  const handleChange = <K extends keyof TripFormData>(
+    key: K,
+    value: TripFormData[K]
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [key]: value,
+    }));
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    console.log("🔥 SUBMIT FIRED");
+    console.log("FormData:", FormData);
+
+    setError(null);
     setLoading(true);
 
     if (
@@ -137,14 +127,26 @@ const CreateTrips = () => {
       setLoading(false);
       return;
     }
+
     if (!user?.$id) {
       setError("User not authenticated. Please log in first.");
       setLoading(false);
       return;
     }
+
     try {
-      setError(null);
-      const response = await action({ ...FormData, userId: user.$id }, setLoading);
+      console.log("🚀 Calling create-trip action...");
+
+      const response = await action(
+        {
+          ...FormData,
+          userId: user.$id,
+        },
+        setLoading
+      );
+
+      console.log("✅ Trip generated:", response);
+
       if (response?.$id) {
         navigate(`/trips/${response.$id}`);
       } else {
@@ -152,14 +154,22 @@ const CreateTrips = () => {
         setLoading(false);
       }
     } catch (error) {
-      setError(`Error generating trip: ${error instanceof Error ? error.message : 'Unknown error'}`);
-      console.error(error);
+      console.error("🔥 Error generating trip:", error);
+
+      setError(
+        `Error generating trip: ${
+          error instanceof Error ? error.message : "Unknown error"
+        }`
+      );
+
       setLoading(false);
     }
   };
+
   return (
     <div className="admin-layout">
       <MobileBar />
+
       <aside className="w-full max-w-[270px] hidden lg:block">
         <SidebarComponent width={270} enableGestures={false}>
           <NavItems />
@@ -167,62 +177,90 @@ const CreateTrips = () => {
       </aside>
 
       <main className="dashboard wrapper md:pt-10">
-        <Header title="Add New Trips" desc="View And Generate Ai Trips" />
+        <Header
+          title="Add New Trips"
+          desc="View And Generate Ai Trips"
+        />
+
         <section className="mt-2.5 wrapper-md">
-          <form action="" className="trip-form" onSubmit={handleSubmit}>
+          <form
+            className="trip-form"
+            onSubmit={handleSubmit}
+          >
+            {/* COUNTRY */}
             <div>
-              <label htmlFor="country">country</label>
+              <label htmlFor="country">Country</label>
+
               <Combobox
                 id="country"
                 dataSource={CountriesData}
                 placeholder="Select A Country"
                 value={FormData.country}
-                change={(e) => handleChange("country", e.value)}
+                change={(e) =>
+                  handleChange("country", e.value as string)
+                }
               />
-
             </div>
+
+            {/* DURATION */}
             <div>
               <label htmlFor="duration">Duration</label>
+
               <input
                 min={1}
+                max={10}
                 type="number"
                 id="duration"
                 placeholder="Enter A Number Of Days"
                 name="duration"
                 className="form-input placeholder:text-gray-100"
-                onInput={(e) => {
-                  const value = Number(e.currentTarget.value);
-                  if (value < 0 || value > 10) {
-                    e.currentTarget.value = "";
-                    alert("enter a number of days between 1 And 10");
+                value={FormData.duration || ""}
+                onChange={(e) => {
+                  const value = Number(e.target.value);
+
+                  if (value > 10) {
+                    alert("Enter a number of days between 1 and 10");
+                    return;
                   }
+
+                  handleChange("duration", value);
                 }}
-                onChange={(e) =>
-                  handleChange("duration", Number(e.target.value))
-                }
               />
             </div>
+
+            {/* OTHER SELECTS */}
             {selectableKeys.map((key) => (
               <div key={key}>
-                <label htmlFor={key}>{formatKey(key)}</label>
+                <label htmlFor={key}>
+                  {formatKey(key)}
+                </label>
 
                 <Combobox
                   id={key}
                   dataSource={(
                     comboBoxItems as Record<TripSelectKey, string[]>
-                  )[key].map((v) => ({ text: v, value: v }))}
-
+                  )[key].map((value) => ({
+                    text: value,
+                    value,
+                  }))}
                   placeholder={`Select A ${formatKey(key)}`}
                   value={FormData[key]}
                   change={(e) =>
-                    handleChange(key, e.value as TripFormData[keyof TripFormData])
+                    handleChange(
+                      key,
+                      e.value as TripFormData[typeof key]
+                    )
                   }
                 />
               </div>
             ))}
 
+            {/* MAP */}
             <div>
-              <label htmlFor="location">Location On World Map</label>
+              <label htmlFor="location">
+                Location On World Map
+              </label>
+
               <MapsComponent>
                 <LayersDirective>
                   <LayerDirective
@@ -238,7 +276,9 @@ const CreateTrips = () => {
                 </LayersDirective>
               </MapsComponent>
             </div>
-            <div className="bg-gray-200 h-px w-full"></div>
+
+            <div className="bg-gray-200 h-px w-full" />
+
             {Error && (
               <div className="error">
                 <p>{Error}</p>
@@ -252,13 +292,19 @@ const CreateTrips = () => {
                 disabled={Loading}
               >
                 <img
-                  src={`/assets/icons/${Loading ? "loader.svg" : "magic-star.svg"
-                    }`}
-                  className={`size-5 ${Loading ? "animate-spin" : ""}`}
+                  src={`/assets/icons/${
+                    Loading ? "loader.svg" : "magic-star.svg"
+                  }`}
+                  className={`size-5 ${
+                    Loading ? "animate-spin" : ""
+                  }`}
                   alt=""
                 />
+
                 <span className="p-16-semibold text-white">
-                  {Loading ? "Generating..." : "Generate Trip"}
+                  {Loading
+                    ? "Generating..."
+                    : "Generate Trip"}
                 </span>
               </button>
             </footer>
